@@ -1,5 +1,5 @@
 #header {
-    background: $blue;
+    color: palette(blue);
 
     #logo {
         @include span-columns(6);

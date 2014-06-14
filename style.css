@@ -162,6 +162,38 @@ a:hover {
   }
 }
 
+#header {
+  color: #003ca6;
+}
+#header #logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+#header #logo:last-child {
+  margin-right: 0;
+}
+@media screen and (min-width: 1025px) {
+  #header #mobile-menu-button {
+    display: none;
+  }
+}
+#header #nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+#header #nav:last-child {
+  margin-right: 0;
+}
+
+#footer {
+  padding: 40px 0;
+  background-color: #003ca6;
+}
+
 #main-wrapper {
   padding: 40px 0;
 }
