@@ -1,0 +1,22 @@
+#our-team {
+
+       
+        #team-bios {
+            margin-top: 50px;
+        }
+        
+        li {
+            border-bottom: 1px solid;
+            border-bottom-color: palette(gray, lightest);
+            padding-bottom:20px;
+            @extend %clearfix;
+        }
+        
+        img {
+            width:150px;
+            float: left;
+            margin-right: 20px;
+        }
+
+}
+
