@@ -181,12 +181,6 @@ a:hover {
   }
 }
 
-<<<<<<< HEAD
-#main-wrapper {
-  padding: 40px 0;
-}
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-=======
 #header {
   background-color: #003ca6;
 }
@@ -229,7 +223,6 @@ a:hover {
   padding: 40px 0;
 }
 @media screen and (min-width: 768px) {
->>>>>>> 79868b40394df262557e6903f3d067992038907d
   #main-wrapper #welcome {
     float: left;
     display: block;
@@ -271,14 +264,10 @@ a:hover {
 }
 
 #about-us {
-<<<<<<< HEAD
   padding: 40px 0 20px 0;
 }
 #about-us .container {
   margin-bottom: 20px;
-=======
-  padding: 40px 0;
->>>>>>> 79868b40394df262557e6903f3d067992038907d
 }
 @media screen and (min-width: 1025px) {
   #about-us .area {
