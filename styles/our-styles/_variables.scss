@@ -3,12 +3,60 @@ $sans-serif:		'Roboto', Arial, Helvetica, Sans Serif;
 
 
 
-// Colors //
-$gray-05:		#323333;
-$gray-04:		#323333;
-$gray-03:		#323333;
-$gray-02:		#323333;
-$gray-01:		#323333;
+
+//////////////////////////////////////////
+// Colors
+//////////////////////////////////////////
+$blue:			#003ca6;
+$gray:          #515151;
+$textColor:     #badass;
+
+$palettes: (
+    blue: (
+        base:       $blue,
+        light:      tint($blue, 25%),
+        lighter:    tint($blue, 50%),
+        lightest:   tint($blue, 75%),
+        dark:       shade($blue, 25%),
+        darker:     shade($blue, 50%),
+        darkest:    shade($blue, 75%)
+    )
+
+    gray: (
+        base:       $gray,
+        light:      tint($gray, 25%),
+        lighter:    tint($gray, 50%),
+        lightest:   tint($gray, 75%),
+        dark:       shade($gray, 25%),
+        darker:     shade($gray, 50%),
+        darkest:    shade($gray, 75%)
+    )
+)
+
+    
+//Friendly color naming with Sass map
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
 
 
-$blue:			#013ca6;
+
+
+//////////////////////////////////////////
+// Typography
+//////////////////////////////////////////
+$sansFontFamily:                'Roboto', sans-serif                !default;
+$serifFontFamily:               'Volkhov', Georgia, serif           !default;
+
+$baseFontSize:                  14px                                !default;
+$baseLineHeight:                1.4                                 !default;
+$baseHeaderLineHeight:          1.2                                 !default;
+$textColor:                     $gray-01                            !default;
+
+$font-smallest: 11px;
+$font-xsmall:   13px;
+$font-small:    $baseFontSize;
+$font-medium:   18px;
+$font-large:    24px;
+$font-xlarge:   32px;
+$font-largest:  48px;
