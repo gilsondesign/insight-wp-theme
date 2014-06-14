@@ -181,15 +181,31 @@ a:hover {
   }
 }
 
-#header {
+.main-nav {
   background-color: #003ca6;
 }
+.main-nav__logo {
+  display: block;
+  float: left;
+}
+.main-nav__menu-button {
+  display: block;
+  float: right;
+}
 @media screen and (min-width: 768px) {
-  #header #mobile-menu-button {
+  .main-nav__menu-button {
     display: none;
   }
 }
-
+.main-nav__list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .main-nav__list {
+    display: block;
+    float: right;
+  }
+}
 @media screen and (min-width: 768px) {
   .main-nav__list-item {
     float: left;

@@ -83,25 +83,20 @@
 </head>
 
 <body <?php body_class('loading'); ?>>
-	
-	<header id="header">
-    	<section class="container">
-            <div id="logo">
-                <a href="<?php echo get_option('home'); ?>/">
-                    <img src="<?php bloginfo('template_url'); ?>/img/insight-logo-white.png" alt="<?php bloginfo('name'); ?>" />
-                </a>
-            </div>
-            <div id="mobile-menu-button">
-                <a href="JavaScript:void(0);"><img src="<?php bloginfo('template_url'); ?>/img/mobile-menu-button.png" /></a>
-            </div>
-            <div id="nav">
-                <ul class="main-nav">
-                    <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--current-page" href="<?php echo get_option('home'); ?>/">Home</a></li>
-                    <li class="main-nav__list-item"><a class="main-nav__link" href="<?php echo get_option('home'); ?>/#about-us">About Us</a></li>
-                    <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
-                    <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/our-team">Our Team</a></li>
-                    <li class="main-nav__list-item"><a class="main-nav__link" href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </section>
-	</header>
+    <nav class="main-nav">
+        <div class="container">
+            <a class="main-nav__logo" href="<?php echo get_option('home'); ?>/">
+                <img src="<?php bloginfo('template_url'); ?>/img/insight-logo-white.png" alt="<?php bloginfo('name'); ?>" />
+            </a>
+
+            <a class="main-nav__menu-button" href="JavaScript:void(0);"><img src="<?php bloginfo('template_url'); ?>/img/mobile-menu-button.png" /></a>
+
+            <ul class="main-nav__list">
+                <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--current-page" href="<?php echo get_option('home'); ?>/">Home</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php echo get_option('home'); ?>/#about-us">About Us</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/our-team">Our Team</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>

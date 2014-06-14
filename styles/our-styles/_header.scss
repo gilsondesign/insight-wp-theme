@@ -1,5 +1,5 @@
 #header {
-    background-color: palette(blue);
+    
 
 
 
@@ -17,15 +17,33 @@
 
 
 
-
-
-
-    #mobile-menu-button {
-        @include media($tablet) { display:none; }
-    }
+    
 }
 
 .main-nav {
+    background-color: palette(blue);
+    
+    &__logo {
+        display: block;
+        float: left;
+    }
+    
+    &__menu-button {
+        display: block;
+        float: right;
+        
+        @include media($tablet) { display:none; }
+    }
+    
+    &__list {
+        display: none;
+        
+        @include media($tablet) {
+            display: block;
+            float: right;
+        }
+    }
+    
     &__list-item {
         @include media($tablet) {
             float: left;
