@@ -9,7 +9,7 @@ Template Name: Home
 
 <section id="main-wrapper">
 	<div class="container">
-		<div id="about-us"> 
+		<div id="welcome"> 
         	<h2>About Us</h2>
             <p>Clients hire us to help them find answers to the myriad of financial questions that arise when evaluating claims: How much is the loss? How do we know that to be true? Can we mitigate damages or expedite recovery?</p>
 
@@ -32,6 +32,15 @@ Template Name: Home
         </div>
     </div>
 </section> 
+
+<section id="about-us">
+	<div class="container">
+        <h4>About Us</h4>
+        <p>Our clients are focused on resolving claims fairly and expeditiously, and seek knowledge and insight derived from solid forensic accounting practices.
+		<p>They seek independent, objective and accurate analyses of the causes, circumstances and financial impact of an event or action. Specifically, they seek our expertise in one or more of these areas:</p>
+    </div>
+</section>
+    
 
 <section id="contact-section">
 	<div class="container">
