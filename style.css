@@ -190,8 +190,9 @@ a:hover {
 }
 
 #footer {
+  color: #a8a8a8;
   padding: 40px 0;
-  background-color: #003ca6;
+  background-color: #3c3c3c;
 }
 
 #main-wrapper {
