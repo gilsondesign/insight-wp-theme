@@ -6,7 +6,7 @@ $gutter:	24.363636px;
 $grid-columns:	12;
 $max-width:	1008px;
 
-$tablet: new-breakpoint(max-width 1024px min-width 768px);
+$tablet: new-breakpoint(min-width 768px);
 $desktop: new-breakpoint(min-width 1025px);
 
 
@@ -57,7 +57,7 @@ $palettes: (
 $sansFontFamily:                'Roboto', sans-serif                !default;
 $serifFontFamily:               'Volkhov', Georgia, serif           !default;
 
-$baseFontSize:                  14px                                !default;
+$baseFontSize:                  16px                                !default;
 $baseLineHeight:                1.4                                 !default;
 $baseHeaderLineHeight:          1.2                                 !default;
 $textColor:                     $gray-01                            !default;

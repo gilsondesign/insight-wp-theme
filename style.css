@@ -71,7 +71,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 87.5%;
+  font-size: 100%;
   line-height: 1;
 }
 
@@ -149,7 +149,7 @@ a:hover {
   display: table;
   clear: both;
 }
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -163,41 +163,46 @@ a:hover {
 }
 
 #header {
-  color: #003ca6;
+  background-color: #003ca6;
 }
-#header #logo {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-#header #logo:last-child {
-  margin-right: 0;
-}
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
   #header #mobile-menu-button {
     display: none;
   }
 }
-#header #nav {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
+
+@media screen and (min-width: 768px) {
+  .main-nav__list-item {
+    float: left;
+  }
 }
-#header #nav:last-child {
-  margin-right: 0;
+.main-nav__link {
+  display: block;
+  padding: 13px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+}
+.main-nav__link:hover, .main-nav__link--current-page {
+  background-color: white;
+  text-decoration: none;
+  color: #003ca6;
+}
+@media screen and (min-width: 768px) {
+  .main-nav__link {
+    display: inline-block;
+  }
 }
 
 #footer {
   padding: 40px 0;
-  background-color: #003ca6;
+  background-color: #515151;
 }
 
 #main-wrapper {
   padding: 40px 0;
 }
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #main-wrapper #welcome {
     float: left;
     display: block;

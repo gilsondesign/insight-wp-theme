@@ -1,17 +1,53 @@
 #header {
-    color: palette(blue);
+    background-color: palette(blue);
 
-    #logo {
-        @include span-columns(6);
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     #mobile-menu-button {
-        @include media($desktop) {
-            display:none;
+        @include media($tablet) { display:none; }
+    }
+}
+
+.main-nav {
+    &__list-item {
+        @include media($tablet) {
+            float: left;
         }
     }
-
-    #nav {
-        @include span-columns(6);
+    
+    &__link {
+        display: block;
+        padding: 13px; // 40px button size
+        border-radius: 3px;
+        color: $white;
+        text-align: center;
+        
+        &:hover,
+        &--current-page {
+            background-color: $white;
+            text-decoration: none;
+            color: palette(blue);
+        }
+        
+        @include media($tablet) {
+            display: inline-block;
+        }
     }
 }
