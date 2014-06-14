@@ -162,6 +162,9 @@ a:hover {
   }
 }
 
+#main-wrapper {
+  padding: 40px 0;
+}
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   #main-wrapper #welcome {
     float: left;
@@ -201,4 +204,68 @@ a:hover {
   #main-wrapper #recent-news:last-child {
     margin-right: 0;
   }
+}
+
+#about-us {
+  padding: 40px 0 20px 0;
+}
+#about-us .container {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1025px) {
+  #about-us .area {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  #about-us .area:last-child {
+    margin-right: 0;
+  }
+}
+
+#contact-section {
+  padding: 40px 0;
+}
+#contact-section #contact-us {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+#contact-section #contact-us:last-child {
+  margin-right: 0;
+}
+#contact-section #our-locations {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+#contact-section #our-locations:last-child {
+  margin-right: 0;
+}
+#contact-section #our-locations div {
+  max-width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  padding-bottom: 15px;
+}
+#contact-section #our-locations div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#contact-section #our-locations div:last-child {
+  margin-right: 0;
+}
+#contact-section #our-locations div:nth-child(2n) {
+  margin-right: 0;
+}
+#contact-section #our-locations div:nth-child(2n+1) {
+  clear: left;
 }
