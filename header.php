@@ -63,7 +63,7 @@
 	
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,300,300italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
     
     <script src="js/modernizr-2.7.1.js"></script>
 
