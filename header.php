@@ -95,12 +95,12 @@
                 <a href="JavaScript:void(0);"><img src="<?php bloginfo('template_url'); ?>/img/mobile-menu-button.png" /></a>
             </div>
             <div id="nav">
-                <ul>
-                    <li><a href="<?php echo get_option('home'); ?>/">Home</a></li>
-                    <li><a href="<?php echo get_option('home'); ?>/#about-us">About Us</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+                <ul class="main-nav">
+                    <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--current-page" href="<?php echo get_option('home'); ?>/">Home</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__link" href="<?php echo get_option('home'); ?>/#about-us">About Us</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/our-team">Our Team</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__link" href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </section>

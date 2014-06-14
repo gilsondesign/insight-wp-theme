@@ -71,7 +71,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 87.5%;
+  font-size: 100%;
   line-height: 1;
 }
 
@@ -119,6 +119,25 @@ h6 {
   line-height: 1.2;
 }
 
+h1 {
+  color: #003ca6;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #003ca6;
+  padding-bottom: 15px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
 p,
 textarea,
 blockquote {
@@ -149,7 +168,7 @@ a:hover {
   display: table;
   clear: both;
 }
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -162,10 +181,55 @@ a:hover {
   }
 }
 
+<<<<<<< HEAD
 #main-wrapper {
   padding: 40px 0;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+=======
+#header {
+  background-color: #003ca6;
+}
+@media screen and (min-width: 768px) {
+  #header #mobile-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav__list-item {
+    float: left;
+  }
+}
+.main-nav__link {
+  display: block;
+  padding: 13px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+}
+.main-nav__link:hover, .main-nav__link--current-page {
+  background-color: white;
+  text-decoration: none;
+  color: #003ca6;
+}
+@media screen and (min-width: 768px) {
+  .main-nav__link {
+    display: inline-block;
+  }
+}
+
+#footer {
+  color: #a8a8a8;
+  padding: 40px 0;
+  background-color: #3c3c3c;
+}
+
+#main-wrapper {
+  padding: 40px 0;
+}
+@media screen and (min-width: 768px) {
+>>>>>>> 79868b40394df262557e6903f3d067992038907d
   #main-wrapper #welcome {
     float: left;
     display: block;
@@ -207,10 +271,14 @@ a:hover {
 }
 
 #about-us {
+<<<<<<< HEAD
   padding: 40px 0 20px 0;
 }
 #about-us .container {
   margin-bottom: 20px;
+=======
+  padding: 40px 0;
+>>>>>>> 79868b40394df262557e6903f3d067992038907d
 }
 @media screen and (min-width: 1025px) {
   #about-us .area {
