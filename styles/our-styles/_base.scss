@@ -18,8 +18,8 @@ html {
 }
 
 body {
-	font-family:$sans-serif;
-	color:$gray-05;
+	font-family: $sansFontFamily;
+	color: palette(gray); 
 }
 
 img { max-width: 100%; }
@@ -60,11 +60,12 @@ p,
 textarea,
 blockquote { line-height: $baseLineHeight; }
 
-a { color: $linkColor;
+a {
+    color: palette(blue);
     text-decoration: none;
 
     &:hover {
-        color: $linkColorHover;
+        color: palette(blue, dark);
         text-decoration: underline;
     }
 }
@@ -75,7 +76,9 @@ a { color: $linkColor;
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	
+    
+	@include outer-container;
+    
 	@include media($tablet) {
 		padding-left: 30px;
 		padding-right: 30px;	

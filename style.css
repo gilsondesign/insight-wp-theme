@@ -58,9 +58,80 @@ table {
   border-spacing: 0;
 }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  color: #bada55;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 87.5%;
+  line-height: 1;
+}
+
 body {
-  font-family: "Roboto", Arial, Helvetica, Sans Serif;
-  color: #323333;
+  font-family: "Roboto", sans-serif;
+  color: #515151;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+p,
+textarea,
+blockquote {
+  line-height: 1.4;
+}
+
+a {
+  color: #003ca6;
+  text-decoration: none;
+}
+a:hover {
+  color: #002d7c;
+  text-decoration: underline;
 }
 
 .container {
@@ -69,6 +140,14 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .container {
@@ -81,78 +160,4 @@ body {
     padding-left: 0px;
     padding-right: 0px;
   }
-}
-
-#header {
-  background: #013ca6;
-  overflow: hidden;
-}
-#header #logo {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-#header #logo:last-child {
-  margin-right: 0;
-}
-@media screen and (min-width: 1025px) {
-  #header #mobile-menu-button {
-    display: none;
-  }
-}
-#header #nav {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-#header #nav:last-child {
-  margin-right: 0;
-}
-
-#footer {
-  padding: 40px 0;
-}
-#footer #contact-us {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-#footer #contact-us:last-child {
-  margin-right: 0;
-}
-#footer #our-locations {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-#footer #our-locations:last-child {
-  margin-right: 0;
-}
-#footer #our-locations div {
-  max-width: 1008px;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  padding-bottom: 15px;
-}
-#footer #our-locations div:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-#footer #our-locations div:last-child {
-  margin-right: 0;
-}
-#footer #our-locations div:nth-child(2n) {
-  margin-right: 0;
-}
-#footer #our-locations div:nth-child(2n+1) {
-  clear: left;
 }

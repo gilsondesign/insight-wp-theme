@@ -16,7 +16,7 @@ $black:			#000000;
 $white:			#ffffff;
 $blue:			#003ca6;
 $gray:          #515151;
-$textColor:     #badass;
+$textColor:     #bada55;
 
 $palettes: (
     blue: (
@@ -27,8 +27,7 @@ $palettes: (
         dark:       shade($blue, 25%),
         darker:     shade($blue, 50%),
         darkest:    shade($blue, 75%)
-    )
-
+    ),
     gray: (
         base:       $gray,
         light:      tint($gray, 25%),
@@ -38,7 +37,7 @@ $palettes: (
         darker:     shade($gray, 50%),
         darkest:    shade($gray, 75%)
     )
-)
+);
  
 //Friendly color naming with Sass map
 @function palette($palette, $tone: 'base') {

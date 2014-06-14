@@ -1,18 +1,17 @@
 #header {
-	background:$blue;
-	overflow:hidden;
+    background: $blue;
 
-	#logo {
-		@include span-columns(6);
-	}
-	
-	#mobile-menu-button {
-		@include media($desktop) {
-			display:none;
-		}
-	}
-	
-	#nav {
-		@include span-columns(6);
-	}
+    #logo {
+        @include span-columns(6);
+    }
+
+    #mobile-menu-button {
+        @include media($desktop) {
+            display:none;
+        }
+    }
+
+    #nav {
+        @include span-columns(6);
+    }
 }
