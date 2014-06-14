@@ -2,3 +2,21 @@ body {
 	font-family:$sans-serif;
 	color:$gray-05;
 }
+
+.container {
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	@include media($tablet) {
+		padding-left: 30px;
+		padding-right: 30px;	
+	}
+	
+	@include media($desktop) {
+		padding-left: 0px;
+		padding-right: 0px;	
+	}
+}
