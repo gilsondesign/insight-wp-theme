@@ -1,6 +1,72 @@
+//////////////////////////////////////////
+//
+//  BASE STYLES
+//
+//////////////////////////////////////////
+
+*,
+*:before,
+*:after { @include box-sizing(border-box); }
+
+html {
+    color: $textColor;
+    font-family: $sansFontFamily;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 87.5%; // Defaults to 14px
+    line-height: 1;
+}
+
 body {
 	font-family:$sans-serif;
 	color:$gray-05;
+}
+
+img { max-width: 100%; }
+
+ul,
+ol,
+dl,
+li,
+dt,
+dd { list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { line-height: $baseHeaderLineHeight; }
+
+// Intent: set a nice readable default line-height
+p,
+textarea,
+blockquote { line-height: $baseLineHeight; }
+
+a { color: $linkColor;
+    text-decoration: none;
+
+    &:hover {
+        color: $linkColorHover;
+        text-decoration: underline;
+    }
 }
 
 .container {
