@@ -25,7 +25,13 @@
 
 #about-us {
 	padding:40px 0;
-	background:red;
+	
+	.area { 
+		@include media($desktop) {
+			@include span-columns(4);	
+		}
+	}
+		
 }
 
 
