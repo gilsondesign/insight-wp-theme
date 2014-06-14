@@ -1,0 +1,53 @@
+#main-wrapper {
+	padding:40px 0;
+	@include media($tablet) {
+		#welcome {
+			@include span-columns(6);	
+		}
+		
+		#recent-news {
+			@include span-columns(6);
+		}
+	}
+	
+	@include media($desktop) {
+		#welcome {
+			@include span-columns(8);	
+		}
+		
+		#recent-news {
+			@include span-columns(4);
+		}
+	}
+	
+	@include 
+}
+
+#about-us {
+	padding:40px 0;
+	background:red;
+}
+
+
+
+#contact-section {
+	padding:40px 0;
+	
+	#contact-us {
+		@include span-columns(6);
+	}
+	
+	#our-locations {
+		@include span-columns(6);
+		
+		div {
+			@include outer-container();
+			@include span-columns(6);
+			@include omega(2n);
+			
+			padding-bottom:15px;
+		}
+	}
+	
+}
+

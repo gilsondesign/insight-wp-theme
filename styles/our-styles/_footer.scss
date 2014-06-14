@@ -1,20 +1,4 @@
 #footer {
 	padding:40px 0;
-	
-	#contact-us {
-		@include span-columns(6);
-	}
-	
-	#our-locations {
-		@include span-columns(6);
-		
-		div {
-			@include outer-container();
-			@include span-columns(6);
-			@include omega(2n);
-			
-			padding-bottom:15px;
-		}
-	}
-	
+    background-color: palette(blue);
 }

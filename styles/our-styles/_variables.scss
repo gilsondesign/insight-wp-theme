@@ -9,9 +9,12 @@ $max-width:	1008px;
 $tablet: new-breakpoint(max-width 1024px min-width 768px);
 $desktop: new-breakpoint(min-width 1025px);
 
+
+
 //////////////////////////////////////////
 // Colors
 //////////////////////////////////////////
+
 $black:			#000000;
 $white:			#ffffff;
 $blue:			#003ca6;
@@ -38,7 +41,7 @@ $palettes: (
         darkest:    shade($gray, 75%)
     )
 );
- 
+
 //Friendly color naming with Sass map
 @function palette($palette, $tone: 'base') {
     @return map-get(map-get($palettes, $palette), $tone);
@@ -50,6 +53,7 @@ $palettes: (
 //////////////////////////////////////////
 // Typography
 //////////////////////////////////////////
+
 $sansFontFamily:                'Roboto', sans-serif                !default;
 $serifFontFamily:               'Volkhov', Georgia, serif           !default;
 
