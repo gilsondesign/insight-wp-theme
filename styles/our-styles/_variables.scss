@@ -39,7 +39,8 @@ $palettes: (
         darkest:    shade($gray, 75%)
     )
 )
- 
+
+    
 //Friendly color naming with Sass map
 @function palette($palette, $tone: 'base') {
     @return map-get(map-get($palettes, $palette), $tone);
