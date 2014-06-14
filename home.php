@@ -10,7 +10,7 @@ Template Name: Home
 <section id="main-wrapper">
 	<div class="container">
 		<div id="welcome"> 
-        	<h2>About Us</h2>
+        	<h2>Welcome</h2>
             <p>Clients hire us to help them find answers to the myriad of financial questions that arise when evaluating claims: How much is the loss? How do we know that to be true? Can we mitigate damages or expedite recovery?</p>
 
             <p>As a team of forensic accountants who’ve been working together since the 1980s, we not only do the fundamentals extremely well, but provide valuable insights to assist our clients’ decision-making and strategies. </p>
@@ -39,6 +39,37 @@ Template Name: Home
         <p>Our clients are focused on resolving claims fairly and expeditiously, and seek knowledge and insight derived from solid forensic accounting practices.
 		<p>They seek independent, objective and accurate analyses of the causes, circumstances and financial impact of an event or action. Specifically, they seek our expertise in one or more of these areas:</p>
     </div>
+    <div class="container">
+    	<div class="area">
+        	<h4>Insurance</h4>
+            <p>Business Income </p>
+            <p>Disability Income </p>
+            <p>Employee Dishonesty / Theft</p>
+            <p>Faithful Performance</p>
+            <p>Financial Condition / Motive</p>
+            <p>Out-Of-Sight Stock</p>
+            <p>Property Recall</p>
+            <p>Property Loss</p>
+            <p>Repair Costs</p>
+            <p>Third-Party Liability</p>
+        </div>
+        <div class="area">
+        	<h4>Litigation</h4>
+            <p>Damage Evaluation</p>
+            <p>Economic Loss</p>
+            <p>Expert Testimony</p>
+            <p>Fraud Investigation</p>
+            <p>Personal Injury</p>
+            <p>Professional Malpractice</p>
+            <p>Subrogation</p>
+
+        </div>
+        <div class="area">
+        	<h4>General</h4>
+            <p>Record Reconstruction</p>
+			<p>Contract Compliance</p>
+
+        </div>
 </section>
     
 
