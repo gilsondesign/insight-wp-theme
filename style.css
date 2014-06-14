@@ -156,3 +156,44 @@ body {
 #footer #our-locations div:nth-child(2n+1) {
   clear: left;
 }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  #main-wrapper #welcome {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  #main-wrapper #welcome:last-child {
+    margin-right: 0;
+  }
+  #main-wrapper #recent-news {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  #main-wrapper #recent-news:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  #main-wrapper #welcome {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  #main-wrapper #welcome:last-child {
+    margin-right: 0;
+  }
+  #main-wrapper #recent-news {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  #main-wrapper #recent-news:last-child {
+    margin-right: 0;
+  }
+}
