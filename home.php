@@ -8,40 +8,49 @@ Template Name: Home
 <?php get_header(); ?>   
 
 <section id="main-wrapper">
-	<div class="container">
-		<div id="welcome"> 
-        	<h2>Welcome</h2>
+        <div class="container">
+                <div id="welcome"> 
+                <h2>Welcome</h2>
             <p>Clients hire us to help them find answers to the myriad of financial questions that arise when evaluating claims: How much is the loss? How do we know that to be true? Can we mitigate damages or expedite recovery?</p>
 
-            <p>As a team of forensic accountants who’ve been working together since the 1980s, we not only do the fundamentals extremely well, but provide valuable insights to assist our clients’ decision-making and strategies. </p>
+            <p>As a team of forensic accountants who���ve been working together since the 1980s, we not only do the fundamentals extremely well, but provide valuable insights to assist our clients��� decision-making and strategies. </p>
             
-            <p>Our new name reflects what our clients appreciate most about us – the insights we offer based on the experiences we’ve been privileged to acquire by working with over 100 insurance companies and law firms on over 7,500 matters. </p>
+            <p>Our new name reflects what our clients appreciate most about us ��� the insights we offer based on the experiences we���ve been privileged to acquire by working with over 100 insurance companies and law firms on over 7,500 matters. </p>
             
             <p>Our clients appreciate that we know what to look for, how and where to find it, that we express what it means in clear and concise language. They also appreciate that we pursue this information with unmatched professionalism, sensitivity and efficiency.</p>
         </div>
         
         <div id="recent-news"> 
-        	<h2>In the News</h2>
-            
+                <h2>In the News</h2>
+            <?php query_posts('showposts=3'); ?>
+                <?php while (have_posts()) : the_post(); ?>
+    
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+                    <span class="post-date"><?php the_date('F j, Y'); ?></span>
+                    <h4><?php the_title(); ?></h4>
+                    <?php the_excerpt(); ?>
+                    </article>
+                <?php endwhile;?>
+                <a href="<?php bloginfo('url'); ?>/recent-news/">view all</a>
         </div>
     </div>
     
     <div class="container">
-    	<div id="our-team">
-        	<h4>Meet our Partners</h4>
+        <div id="our-team">
+                <h4>Meet our Partners</h4>
         </div>
     </div>
 </section> 
 
 <section id="about-us">
-	<div class="container">
+        <div class="container">
         <h4>About Us</h4>
         <p>Our clients are focused on resolving claims fairly and expeditiously, and seek knowledge and insight derived from solid forensic accounting practices.
-		<p>They seek independent, objective and accurate analyses of the causes, circumstances and financial impact of an event or action. Specifically, they seek our expertise in one or more of these areas:</p>
+                <p>They seek independent, objective and accurate analyses of the causes, circumstances and financial impact of an event or action. Specifically, they seek our expertise in one or more of these areas:</p>
     </div>
     <div class="container">
-    	<div class="area">
-        	<h4>Insurance</h4>
+        <div class="area">
+                <h4>Insurance</h4>
             <p>Business Income </p>
             <p>Disability Income </p>
             <p>Employee Dishonesty / Theft</p>
@@ -54,7 +63,7 @@ Template Name: Home
             <p>Third-Party Liability</p>
         </div>
         <div class="area">
-        	<h4>Litigation</h4>
+                <h4>Litigation</h4>
             <p>Damage Evaluation</p>
             <p>Economic Loss</p>
             <p>Expert Testimony</p>
@@ -65,16 +74,20 @@ Template Name: Home
 
         </div>
         <div class="area">
-        	<h4>General</h4>
+                <h4>General</h4>
             <p>Record Reconstruction</p>
-			<p>Contract Compliance</p>
+                        <p>Contract Compliance</p>
 
         </div>
+    </div>
+    <div class="container">
+        <p>Each principal brings more than 20 years of forensic accounting experience, resulting in unmatched knowledge, competence and effectiveness on each and every engagement.</p>
+    </div>
 </section>
     
 
 <section id="contact-section">
-	<div class="container">
+        <div class="container">
         <div id="contact-us">
             <h3>Contact Us</h3>
             <p></p>
@@ -129,4 +142,3 @@ Template Name: Home
 
 
 <?php get_footer(); ?>
-

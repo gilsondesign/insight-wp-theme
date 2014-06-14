@@ -277,13 +277,22 @@ a:hover {
   #main-wrapper #recent-news:last-child {
     margin-right: 0;
   }
+  #main-wrapper #recent-news .post-date {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a8a8a8;
+    display: block;
+    padding-bottom: 4px;
+  }
+  #main-wrapper #recent-news a {
+    display: block;
+    padding-bottom: 15px;
+  }
 }
 
 #about-us {
   padding: 40px 0 20px 0;
-}
-#about-us .container {
-  margin-bottom: 20px;
+  background: lightgray;
 }
 @media screen and (min-width: 1025px) {
   #about-us .area {
@@ -291,9 +300,15 @@ a:hover {
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
+    padding-bottom: 20px;
   }
   #about-us .area:last-child {
     margin-right: 0;
+  }
+  #about-us .area h4 {
+    margin: 20px 0 4px 0;
+    border-bottom: solid 1px;
+    padding-bottom: 6px;
   }
 }
 
@@ -341,4 +356,30 @@ a:hover {
 }
 #contact-section #our-locations div:nth-child(2n+1) {
   clear: left;
+}
+
+@media screen and (min-width: 1025px) {
+  #posts-list #recent-news {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  #posts-list #recent-news:last-child {
+    margin-right: 0;
+  }
+  #posts-list #resource-links {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin-right: 0;
+  }
+  #posts-list #resource-links:last-child {
+    margin-right: 0;
+  }
+  #posts-list #resource-links a {
+    padding-bottom: 10px;
+    display: block;
+  }
 }

@@ -1,0 +1,17 @@
+#posts-list {
+	@include media($desktop) {
+		#recent-news {
+			@include span-columns(9);
+		}
+		
+		#resource-links {
+			@include span-columns(3);
+			@include omega();
+			
+			a {
+				padding-bottom:10px;
+				display:block;
+			}
+		}
+	}
+}
