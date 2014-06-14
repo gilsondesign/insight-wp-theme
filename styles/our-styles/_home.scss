@@ -1,0 +1,59 @@
+.container {
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	
+	@include media($tablet) {
+		padding-left: 30px;
+		padding-right: 30px;	
+	}
+	
+	@include media($desktop) {
+		padding-left: 0px;
+		padding-right: 0px;	
+	}
+}
+
+#header {
+	background:$blue;
+	overflow:hidden;
+
+	#logo {
+		@include span-columns(6);
+	}
+	
+	#mobile-menu-button {
+		@include media($desktop) {
+			display:none;
+		}
+	}
+	
+	#nav {
+		@include span-columns(6);
+	}
+}
+
+#footer {
+	padding:40px 0;
+	
+	#contact-us {
+		@include span-columns(6);
+	}
+	
+	#our-locations {
+		@include span-columns(6);
+		
+		div {
+			@include outer-container();
+			@include span-columns(6);
+			@include omega(2n);
+			
+			padding-bottom:15px;
+		}
+	}
+	
+}
+	
+	

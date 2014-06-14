@@ -1,8 +1,27 @@
+// Grid //
+$column:	67.6667px;
+$gutter:	24.363636px;
+$grid-columns:	12;
+$max-width:	1008px;
+
+$tablet: new-breakpoint(max-width 1024px min-width 768px);
+$desktop: new-breakpoint(min-width 1025px);
+
+// Fonts //
 $sans-serif:		'Roboto', Arial, Helvetica, Sans Serif;
 
-
-
-
+<<<<<<< HEAD
+=======
+// Colors //
+$black:			#000000;
+$white:			#ffffff;
+$gray-06:		#191919;
+$gray-05:		#323333;
+$gray-04:		#323333;
+$gray-03:		#323333;
+$gray-02:		#323333;
+$gray-01:		#323333;
+>>>>>>> origin/master
 
 //////////////////////////////////////////
 // Colors

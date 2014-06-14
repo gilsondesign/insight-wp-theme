@@ -65,7 +65,7 @@
 
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css">
     
-    <script src="js/modernizr-2.7.1.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/modernizr-2.7.1.js"></script>
 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/ie8support.js"></script>
@@ -85,21 +85,23 @@
 <body <?php body_class('loading'); ?>>
 	
 	<header id="header">
-        <div id="logo">
-            <a href="<?php echo get_option('home'); ?>/">
-                <img src="<?php bloginfo('template_url'); ?>/img/insight-logo.png" alt="<?php bloginfo('name'); ?>" />
-            </a>
-        </div>
-        <div id="mobile-menu-button">
-            <a href="JavaScript:void(0);"><img src="<?php bloginfo('template_url'); ?>/img/mobile-menu-button.png" /></a>
-        </div>
-        <div id="nav">
-        	<ul>
-            	<li><a href="<?php echo get_option('home'); ?>/">Home</a></li>
-                <li><a href="<?php echo get_option('home'); ?>/#about-us">About Us</a></li>
-                <li><a href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
-                <li><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </div>
+    	<section class="container">
+            <div id="logo">
+                <a href="<?php echo get_option('home'); ?>/">
+                    <img src="<?php bloginfo('template_url'); ?>/img/insight-logo-white.png" alt="<?php bloginfo('name'); ?>" />
+                </a>
+            </div>
+            <div id="mobile-menu-button">
+                <a href="JavaScript:void(0);"><img src="<?php bloginfo('template_url'); ?>/img/mobile-menu-button.png" /></a>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="<?php echo get_option('home'); ?>/">Home</a></li>
+                    <li><a href="<?php echo get_option('home'); ?>/#about-us">About Us</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </section>
 	</header>
