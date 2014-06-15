@@ -144,6 +144,12 @@ h3 {
   padding-bottom: 10px;
 }
 
+.btn {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
 p,
 textarea,
 blockquote {
