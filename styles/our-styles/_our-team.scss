@@ -7,21 +7,28 @@
     
     .staff {
         h3~h3 {padding-top: 25px;}
-        li {padding-bottom: 10px;}
+        li {padding-bottom: 15px;}
+        .location{
+            font-size: 12px;
+            font-weight: 500;
+            font-style: italic;
+        
+        }
     }
     
-    #team-bios {        
+    #team-bios { 
+        .bio-main {overflow: hidden;}
+        
         li {
             border-bottom: 1px solid;
             border-bottom-color: palette(gray, lightest);
-            padding-bottom:20px;
-            padding-top: 20px;
+            padding-bottom:25px;
+            padding-top: 25px;
             @extend %clearfix;
             
            &:last-child {
               border-bottom: 0px;
-            }
-            
+            }   
         }
     
         .btn {margin-top: 15px;}
@@ -31,6 +38,7 @@
         width:150px;
         float: left;
         margin-right: 20px;
+        border-radius: 4px;
     }
 
 }
