@@ -26,9 +26,8 @@
             padding-top: 25px;
             @extend %clearfix;
             
-           &:last-child {
-              border-bottom: 0px;
-            }   
+            &:last-child { border-bottom: 0px; }
+            &:first-child { padding-top: 0px;}
         }
     
         .btn {margin-top: 15px;}

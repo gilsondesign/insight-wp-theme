@@ -324,6 +324,9 @@ a:hover {
 #our-team #team-bios li:last-child {
   border-bottom: 0px;
 }
+#our-team #team-bios li:first-child {
+  padding-top: 0px;
+}
 #our-team #team-bios .btn {
   margin-top: 15px;
 }
