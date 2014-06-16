@@ -129,19 +129,29 @@ h1 {
   color: #003ca6;
   font-size: 32px;
   font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 15px;
 }
 
 h2 {
   font-size: 26px;
-  font-weight: 500;
-  color: #003ca6;
+  font-weight: 300;
+  color: #141414;
   padding-bottom: 15px;
 }
 
 h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  color: #003ca6;
+}
+
+h4 {
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 10px;
+  color: #141414;
 }
 
 .btn {
@@ -215,6 +225,9 @@ a:hover {
     padding-right: 0px;
   }
 }
+.container p {
+  margin-bottom: 15px;
+}
 
 .main-nav {
   background-color: #003ca6;
@@ -261,6 +274,58 @@ a:hover {
 @media screen and (min-width: 768px) {
   .main-nav__link {
     display: inline-block;
+  }
+}
+
+#contact-section {
+  padding: 40px 0;
+}
+@media screen and (min-width: 1025px) {
+  #contact-section #contact-us {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  #contact-section #contact-us:last-child {
+    margin-right: 0;
+  }
+  #contact-section #our-locations {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0;
+  }
+  #contact-section #our-locations:last-child {
+    margin-right: 0;
+  }
+  #contact-section #our-locations .location {
+    max-width: 1008px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    padding-bottom: 15px;
+  }
+  #contact-section #our-locations .location:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #contact-section #our-locations .location:last-child {
+    margin-right: 0;
+  }
+  #contact-section #our-locations .location:nth-child(2n) {
+    margin-right: 0;
+  }
+  #contact-section #our-locations .location:nth-child(2n+1) {
+    clear: left;
+  }
+  #contact-section #our-locations .location p {
+    margin-bottom: 2px;
   }
 }
 
@@ -340,6 +405,22 @@ a:hover {
 #main-wrapper {
   padding: 40px 0;
 }
+#main-wrapper #inspirational-quote {
+  text-align: center;
+}
+#main-wrapper #inspirational-quote .quote {
+  font-weight: 300;
+  font-size: 32px;
+  color: #003ca6;
+  display: block;
+}
+#main-wrapper #inspirational-quote .author {
+  font-weight: 300;
+  color: #515151;
+  font-size: 16px;
+  padding-top: 15px;
+  display: block;
+}
 @media screen and (min-width: 768px) {
   #main-wrapper #welcome {
     float: left;
@@ -379,63 +460,42 @@ a:hover {
   #main-wrapper #recent-news:last-child {
     margin-right: 0;
   }
-  #main-wrapper #recent-news .post-date {
+  #main-wrapper #recent-news .news-item {
+    border-bottom: solid 1px lightgray;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  #main-wrapper #recent-news .news-item .post-date {
     font-size: 12px;
     text-transform: uppercase;
     color: #a8a8a8;
     display: block;
     padding-bottom: 4px;
   }
-  #main-wrapper #recent-news a {
+  #main-wrapper #recent-news .news-item a {
     display: block;
     padding-bottom: 15px;
   }
-}
-
-#about-us {
-  padding: 40px 0 20px 0;
-  background: lightgray;
-}
-@media screen and (min-width: 1025px) {
-  #about-us .area {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    padding-bottom: 20px;
-  }
-  #about-us .area:last-child {
-    margin-right: 0;
-  }
-  #about-us .area h4 {
-    margin: 20px 0 4px 0;
-    border-bottom: solid 1px;
-    padding-bottom: 6px;
+  #main-wrapper #recent-news .view-all {
+    color: #515151;
+    float: right;
   }
 }
 
-#contact-section {
-  padding: 40px 0;
+#meet-our-team {
+  padding: 25px 0 40px 0;
 }
-#contact-section #contact-us {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
+#meet-our-team #partners {
+  max-width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#contact-section #contact-us:last-child {
-  margin-right: 0;
+#meet-our-team #partners:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-#contact-section #our-locations {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-}
-#contact-section #our-locations:last-child {
-  margin-right: 0;
-}
-#contact-section #our-locations div {
+#meet-our-team #partners div {
   max-width: 1008px;
   margin-left: auto;
   margin-right: auto;
@@ -443,23 +503,76 @@ a:hover {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  padding-bottom: 15px;
 }
-#contact-section #our-locations div:after {
+#meet-our-team #partners div:after {
   content: "";
   display: table;
   clear: both;
 }
-#contact-section #our-locations div:last-child {
+#meet-our-team #partners div:last-child {
   margin-right: 0;
 }
-#contact-section #our-locations div:nth-child(2n) {
-  margin-right: 0;
+#meet-our-team #partners div img {
+  padding-bottom: 10px;
 }
-#contact-section #our-locations div:nth-child(2n+1) {
-  clear: left;
+#meet-our-team #partners div h4 {
+  padding-bottom: 0px;
+}
+@media screen and (min-width: 1025px) {
+  #meet-our-team #partners div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  #meet-our-team #partners div:last-child {
+    margin-right: 0;
+  }
+  #meet-our-team #partners div:nth-child(6n) {
+    margin-right: 0;
+  }
+  #meet-our-team #partners div:nth-child(6n+1) {
+    clear: left;
+  }
 }
 
+#about-us {
+  padding: 40px 0 20px 0;
+  background: lightgray;
+}
+#about-us .area {
+  padding-bottom: 20px;
+}
+#about-us .area h4 {
+  margin: 20px 0 4px 0;
+  border-bottom: solid 1px;
+  padding-bottom: 6px;
+}
+#about-us .area p {
+  margin-bottom: 2px;
+}
+@media screen and (min-width: 1025px) {
+  #about-us .area {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  #about-us .area:last-child {
+    margin-right: 0;
+  }
+}
+
+#posts-list {
+  padding: 40px 0;
+}
+#posts-list #recent-news .post-date {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a8a8a8;
+  display: block;
+  padding-bottom: 4px;
+}
 @media screen and (min-width: 1025px) {
   #posts-list #recent-news {
     float: left;
@@ -483,5 +596,20 @@ a:hover {
   #posts-list #resource-links a {
     padding-bottom: 10px;
     display: block;
+  }
+}
+
+#single-post {
+  padding: 40px 0;
+}
+@media screen and (min-width: 1025px) {
+  #single-post article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  #single-post article:last-child {
+    margin-right: 0;
   }
 }

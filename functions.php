@@ -57,7 +57,7 @@
 	
 	function excerpt_read_more_link($output) {
 	 global $post;
-	 return $output . '<a href="'. get_permalink($post->ID) . '" class="btn btn-teal">Read More &raquo;</a>';
+	 return $output . '<a href="'. get_permalink($post->ID) . '">Read More &raquo;</a>';
 	}
 	add_filter('the_excerpt', 'excerpt_read_more_link');
 	

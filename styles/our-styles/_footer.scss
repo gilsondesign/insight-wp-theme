@@ -1,3 +1,31 @@
+
+#contact-section {
+	padding:40px 0;
+	
+	
+	@include media($desktop) {
+		#contact-us {
+			@include span-columns(6);
+		}
+		
+		#our-locations {
+			@include span-columns(6);
+			@include omega();
+			
+			.location {
+				@include outer-container();
+				@include span-columns(6);
+				@include omega(2n);
+				
+				padding-bottom:15px;
+				p {
+					margin-bottom:2px;
+				}
+			}
+		}
+	}
+}
+
 #footer {
     color: palette(gray, lighter);
     padding:40px 0;

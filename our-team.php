@@ -129,6 +129,7 @@ Template Name: Our Team
             </article>
             
         </div>
+        </section>
     </div>
 </div>    
     
