@@ -58,7 +58,7 @@ table {
   border-spacing: 0;
 }
 
-#our-team li:after {
+#our-team #team-bios li:after {
   content: "";
   display: table;
   clear: both;
@@ -145,9 +145,32 @@ h3 {
 }
 
 .btn {
-  color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  display: inline-block;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear, to bottom, #3498db, #2980b9;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear, to bottom, #3cb0fd, #3498db;
+  text-decoration: none;
+}
+.btn:focus {
+  outline: none;
 }
 
 p,
@@ -247,13 +270,54 @@ a:hover {
   background-color: #3c3c3c;
 }
 
-#our-team #team-bios {
-  margin-top: 50px;
+#our-team {
+  max-width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#our-team li {
+#our-team:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#our-team aside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+#our-team aside:last-child {
+  margin-right: 0;
+}
+#our-team article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+}
+#our-team article:last-child {
+  margin-right: 0;
+}
+#our-team .subhead {
+  margin-bottom: 50px;
+}
+#our-team .staff h3 ~ h3 {
+  padding-top: 25px;
+}
+#our-team .staff li {
+  padding-bottom: 10px;
+}
+#our-team #team-bios li {
   border-bottom: 1px solid;
   border-bottom-color: lightgray;
   padding-bottom: 20px;
+  padding-top: 20px;
+}
+#our-team #team-bios li:last-child {
+  border-bottom: 0px;
+}
+#our-team #team-bios .btn {
+  margin-top: 15px;
 }
 #our-team img {
   width: 150px;

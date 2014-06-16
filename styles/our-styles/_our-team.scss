@@ -1,22 +1,37 @@
 #our-team {
-
-       
-        #team-bios {
-            margin-top: 50px;
-        }
-        
+    @include outer-container;
+    aside { @include span-columns(3); }
+    article { @include span-columns(9); }
+    
+    .subhead {margin-bottom: 50px;}
+    
+    .staff {
+        h3~h3 {padding-top: 25px;}
+        li {padding-bottom: 10px;}
+    }
+    
+    #team-bios {        
         li {
             border-bottom: 1px solid;
             border-bottom-color: palette(gray, lightest);
             padding-bottom:20px;
+            padding-top: 20px;
             @extend %clearfix;
+            
+           &:last-child {
+              border-bottom: 0px;
+            }
+            
         }
-        
-        img {
-            width:150px;
-            float: left;
-            margin-right: 20px;
-        }
+    
+        .btn {margin-top: 15px;}
+    }
+
+    img {
+        width:150px;
+        float: left;
+        margin-right: 20px;
+    }
 
 }
 
