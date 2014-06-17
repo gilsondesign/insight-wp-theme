@@ -82,8 +82,19 @@ html {
 }
 
 body {
+  padding-top: 50px;
   font-family: "Roboto", sans-serif;
   color: #515151;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 64px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+    padding-top: 125px;
+  }
 }
 
 img {
@@ -230,15 +241,54 @@ a:hover {
 }
 
 .main-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: #003ca6;
+}
+@media screen and (min-width: 1025px) {
+  .main-nav {
+    -webkit-transition: top 0.25s ease-in-out;
+    -moz-transition: top 0.25s ease-in-out;
+    transition: top 0.25s ease-in-out;
+  }
+  .main-nav.headroom--unpinned {
+    top: -100%;
+    -webkit-transition: top 0.25s ease-in-out;
+    -moz-transition: top 0.25s ease-in-out;
+    transition: top 0.25s ease-in-out;
+  }
+  .main-nav.headroom--pinned {
+    top: 0;
+    -webkit-transition: top 0.25s ease-in-out;
+    -moz-transition: top 0.25s ease-in-out;
+    transition: top 0.25s ease-in-out;
+  }
 }
 .main-nav__logo {
   display: block;
   float: left;
+  max-width: 160px;
+  padding: 10px 0;
+}
+@media screen and (min-width: 768px) {
+  .main-nav__logo {
+    max-width: 220px;
+    padding: 12px 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .main-nav__logo {
+    max-width: 360px;
+    padding: 30px 0;
+  }
 }
 .main-nav__menu-button {
   display: block;
-  float: right;
+  padding: 4px 0;
+  text-align: right;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .main-nav__menu-button {
@@ -247,16 +297,27 @@ a:hover {
 }
 .main-nav__list {
   display: none;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .main-nav__list {
-    display: block;
+    display: block !important;
     float: right;
+    width: auto;
   }
+}
+.main-nav__list-item {
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .main-nav__list-item {
     float: left;
+    margin: 11px 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .main-nav__list-item {
+    margin: 40px 0;
   }
 }
 .main-nav__link {
@@ -400,6 +461,11 @@ a:hover {
   float: left;
   margin-right: 20px;
   border-radius: 4px;
+}
+
+.home-banner {
+  height: 400px;
+  background-color: #bada55;
 }
 
 #main-wrapper {

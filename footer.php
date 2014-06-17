@@ -7,8 +7,8 @@
             </div>
             <div id="our-locations">
                 <h3>Our Office Locations</h3>
-                <div> 
-                    <div class="location">    
+                <div>
+                    <div class="location">
                         <h4>Atlanta</h4>
                         <p>2470 Windy Hill Road SE</p>
                         <p>PMB 2070 Suite 300</p>
@@ -48,9 +48,9 @@
                         <p>F: 952 432 2281</p>
                     </div>
                 </div>
-            </div>  
-        </div>   
-    </section>       	   
+            </div>
+        </div>
+    </section>
     <footer id="footer">
         <div class="container">
             <p><b>Insight Forensic Accountants S.C.</b></p>

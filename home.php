@@ -5,27 +5,34 @@ Template Name: Home
 ?>
 
 
-<?php get_header(); ?>   
+<?php get_header(); ?>
+
+<div class="home-banner">
+    <div class="container">
+        <h1>Forensic Accountants</h1>
+        <p>We help you discover the who, what, where and why. Peters & Associates offers top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
+    </div>
+</div>
 
 <section id="main-wrapper">
         <div class="container">
-                <div id="welcome"> 
+                <div id="welcome">
                 <h1>Welcome</h1>
             <p>Clients hire us to help them find answers to the myriad of financial questions that arise when evaluating claims: How much is the loss? How do we know that to be true? Can we mitigate damages or expedite recovery?</p>
 
             <p>As a team of forensic accountants who've been working together since the 1980s, we not only do the fundamentals extremely well, but provide valuable insights to assist our clients' decision-making and strategies. </p>
-            
+
             <p>Our new name reflects what our clients appreciate most about us - the insights we offer based on the experiences we've been privileged to acquire by working with over 100 insurance companies and law firms on over 7,500 matters. </p>
-            
+
             <p>Our clients appreciate that we know what to look for, how and where to find it, that we express what it means in clear and concise language. They also appreciate that we pursue this information with unmatched professionalism, sensitivity and efficiency.</p>
         </div>
-        
-        <div id="recent-news"> 
+
+        <div id="recent-news">
                 <h1>In the News</h1>
 				<div class="news-item">
 					<?php query_posts('showposts=3'); ?>
                     <?php while (have_posts()) : the_post(); ?>
-        
+
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
                         <span class="post-date"><?php the_date('F j, Y'); ?></span>
                         <h4><?php the_title(); ?></h4>
@@ -36,7 +43,7 @@ Template Name: Home
                 <a href="<?php bloginfo('url'); ?>/resources/" class="view-all">view all</a>
         </div>
     </div>
-    
+
     <div class="container">
         <div id="meet-our-team">
         	<h2>Meet our Partners</h2>
@@ -74,14 +81,14 @@ Template Name: Home
            </div>
         </div>
     </div>
-    
+
     <div class="container">
     	<div id="inspirational-quote">
         	<span class="quote">The achievements of an organization are the results of the combined effort of each individual.</span>
 			<span class="author">- Vince Lombardi, Green Bay Packers</span>
         </div>
     </div>
-</section> 
+</section>
 
 <section id="about-us">
         <div class="container">
@@ -125,10 +132,10 @@ Template Name: Home
         <p>Each principal brings more than 20 years of forensic accounting experience, resulting in unmatched knowledge, competence and effectiveness on each and every engagement.</p>
     </div>
 </section>
-    
 
 
-    
+
+
 
 
 <?php get_footer(); ?>

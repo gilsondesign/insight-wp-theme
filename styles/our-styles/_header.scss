@@ -1,69 +1,90 @@
-#header {
-    
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-    
-}
-
 .main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: palette(blue);
-    
+
+    @include media($desktop) {
+        @include transition(top 0.25s ease-in-out);
+
+        &.headroom--unpinned {
+            top: -100%;
+
+            @include transition(top 0.25s ease-in-out);
+        }
+
+        &.headroom--pinned {
+            top: 0;
+
+            @include transition(top 0.25s ease-in-out)
+        }
+    }
+
     &__logo {
         display: block;
         float: left;
+        max-width: 160px;
+        padding: 10px 0;
+
+        @include media($tablet) {
+            max-width: 220px;
+            padding: 12px 0;
+        }
+
+        @include media($desktop) {
+            max-width: 360px;
+            padding: 30px 0;
+        }
     }
-    
+
     &__menu-button {
         display: block;
-        float: right;
-        
-        @include media($tablet) { display:none; }
+        padding: 4px 0;
+        text-align: right;
+        overflow: hidden;
+
+        @include media($tablet) { display: none; }
     }
-    
+
     &__list {
         display: none;
-        
+        width: 100%;
+
         @include media($tablet) {
-            display: block;
+            display: block !important;
             float: right;
+            width: auto;
         }
     }
-    
+
     &__list-item {
+        margin-bottom: 10px;
+
         @include media($tablet) {
             float: left;
+            margin: 11px 0;
+        }
+
+        @include media($desktop) {
+            margin: 40px 0;
         }
     }
-    
+
     &__link {
         display: block;
         padding: 13px; // 40px button size
         border-radius: 3px;
         color: $white;
         text-align: center;
-        
+
         &:hover,
         &--current-page {
             background-color: $white;
             text-decoration: none;
             color: palette(blue);
         }
-        
+
         @include media($tablet) {
             display: inline-block;
         }

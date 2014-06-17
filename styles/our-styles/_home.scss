@@ -1,8 +1,13 @@
+.home-banner {
+    height: 400px;
+    background-color: #bada55;
+}
+
 #main-wrapper {
-	padding:40px 0;
-	
+	padding: 40px 0;
+
 	#inspirational-quote {
-		
+
 		text-align:center;
 		.quote {
 			font-weight:300;
@@ -10,7 +15,7 @@
 			color:palette(blue);
 			display:block;
 		}
-		
+
 		.author {
 			font-weight:300;
 			color:palette(gray);
@@ -19,31 +24,31 @@
 			display:block;
 		}
 	}
-	
+
 	@include media($tablet) {
 		#welcome {
 			@include span-columns(6);
 		}
-		
+
 		#recent-news {
 			@include span-columns(6);
 		}
 	}
-	
+
 	@include media($desktop) {
 		#welcome {
 			@include span-columns(8);
 		}
-		
+
 		#recent-news {
 			@include span-columns(4);
-			
+
 			.news-item {
 				border-bottom:solid 1px palette(gray, lightest);
 				padding-bottom:6px;
 				margin-bottom:12px;
-				
-			
+
+
 				.post-date {
 					font-size:12px;
 					text-transform:uppercase;
@@ -51,65 +56,65 @@
 					display:block;
 					padding-bottom:4px;
 				}
-				
+
 				a {
 					display:block;
 					padding-bottom:15px;
 				}
 			}
-			
+
 			.view-all {
 				color:palette(gray);
 				float:right;
 			}
-		}		
+		}
 	}
 }
 
 #meet-our-team {
 	padding:25px 0 40px 0;
-	
+
 	#partners {
 		@include outer-container();
-		
+
 		div {
 			@include outer-container();
 			@include span-columns(6);
-			
+
 			img {
 				padding-bottom:10px;
 			}
-			
+
 			h4 {
 				padding-bottom:0px;
 			}
-			
+
 			@include media($desktop) {
 				@include span-columns(2);
 				@include omega(6n);
 			}
 		}
-	}	
+	}
 }
 
 #about-us {
 	padding:40px 0 20px 0;
 	background: palette(gray, lightest);
-	
-	.area { 
+
+	.area {
 		padding-bottom:20px;
-		
+
 		h4 {
 			margin:20px 0 4px 0;
 			border-bottom:solid 1px palette(gray, ligher);
 			padding-bottom:6px;
 		}
-		
+
 		p {
 			margin-bottom:2px;
 		}
 		@include media($desktop) {
-			@include span-columns(4);	
+			@include span-columns(4);
 		}
-	}		
+	}
 }
