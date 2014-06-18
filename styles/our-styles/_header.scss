@@ -3,22 +3,22 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: palette(blue);
+    z-index: 1;
 
-    @include media($desktop) {
+    @include transition(top 0.25s ease-in-out);
+
+    &.headroom--not-top  { background-color: palette(blue); }
+
+    &.headroom--unpinned {
+        top: -100%;
+
         @include transition(top 0.25s ease-in-out);
+    }
 
-        &.headroom--unpinned {
-            top: -100%;
+    &.headroom--pinned {
+        top: 0;
 
-            @include transition(top 0.25s ease-in-out);
-        }
-
-        &.headroom--pinned {
-            top: 0;
-
-            @include transition(top 0.25s ease-in-out)
-        }
+        @include transition(top 0.25s ease-in-out)
     }
 
     &__logo {

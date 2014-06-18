@@ -1,6 +1,19 @@
 .home-banner {
-    height: 400px;
-    background-color: #bada55;
+    position: relative;
+    height: 500px;
+    background: no-repeat center center fixed;
+    background-size: cover;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: palette(blue);
+        @include opacity(0.8);
+    }
 }
 
 #main-wrapper {

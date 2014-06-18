@@ -18,17 +18,8 @@ html {
 }
 
 body {
-    padding-top: 50px;
     font-family: $sansFontFamily;
     color: palette(gray);
-
-    @include media($tablet) {
-        padding-top: 64px;
-    }
-
-    @include media($desktop) {
-        padding-top: 125px;
-    }
 }
 
 img { max-width: 100%; }

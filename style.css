@@ -82,19 +82,8 @@ html {
 }
 
 body {
-  padding-top: 50px;
   font-family: "Roboto", sans-serif;
   color: #515151;
-}
-@media screen and (min-width: 768px) {
-  body {
-    padding-top: 64px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  body {
-    padding-top: 125px;
-  }
 }
 
 img {
@@ -245,26 +234,25 @@ a:hover {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
+  -webkit-transition: top 0.25s ease-in-out;
+  -moz-transition: top 0.25s ease-in-out;
+  transition: top 0.25s ease-in-out;
+}
+.main-nav.headroom--not-top {
   background-color: #003ca6;
 }
-@media screen and (min-width: 1025px) {
-  .main-nav {
-    -webkit-transition: top 0.25s ease-in-out;
-    -moz-transition: top 0.25s ease-in-out;
-    transition: top 0.25s ease-in-out;
-  }
-  .main-nav.headroom--unpinned {
-    top: -100%;
-    -webkit-transition: top 0.25s ease-in-out;
-    -moz-transition: top 0.25s ease-in-out;
-    transition: top 0.25s ease-in-out;
-  }
-  .main-nav.headroom--pinned {
-    top: 0;
-    -webkit-transition: top 0.25s ease-in-out;
-    -moz-transition: top 0.25s ease-in-out;
-    transition: top 0.25s ease-in-out;
-  }
+.main-nav.headroom--unpinned {
+  top: -100%;
+  -webkit-transition: top 0.25s ease-in-out;
+  -moz-transition: top 0.25s ease-in-out;
+  transition: top 0.25s ease-in-out;
+}
+.main-nav.headroom--pinned {
+  top: 0;
+  -webkit-transition: top 0.25s ease-in-out;
+  -moz-transition: top 0.25s ease-in-out;
+  transition: top 0.25s ease-in-out;
 }
 .main-nav__logo {
   display: block;
@@ -464,8 +452,22 @@ a:hover {
 }
 
 .home-banner {
-  height: 400px;
-  background-color: #bada55;
+  position: relative;
+  height: 500px;
+  background: no-repeat center center fixed;
+  background-size: cover;
+}
+.home-banner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #003ca6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: 0.8;
 }
 
 #main-wrapper {
@@ -678,4 +680,21 @@ a:hover {
   #single-post article:last-child {
     margin-right: 0;
   }
+}
+
+.single-post {
+  padding-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .single-post {
+    padding-top: 64px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .single-post {
+    padding-top: 125px;
+  }
+}
+.single-post .main-nav {
+  background-color: #003ca6;
 }

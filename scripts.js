@@ -10389,8 +10389,18 @@ $(function () {
     })
 });
 
-$('.main-nav').headroom({
-    offset: $('.home-banner').outerHeight(),
+// This should just be for the Homepage
+$('.home .main-nav').headroom({
+    offset: $('.home-banner').outerHeight() - $('.main-nav').outerHeight(),
+    tolerance : {
+        down : 10,
+        up : 0
+    },
+});
+
+    // This should be for every page that ISN'T the Homepage
+$('.single-post .main-nav').headroom({
+    offset: 0,
     tolerance : {
         down : 10,
         up : 0

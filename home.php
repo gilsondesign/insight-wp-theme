@@ -7,7 +7,7 @@ Template Name: Home
 
 <?php get_header(); ?>
 
-<div class="home-banner">
+<div class="home-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/forensic-accounting.jpg);">
     <div class="container">
         <h1>Forensic Accountants</h1>
         <p>We help you discover the who, what, where and why. Peters & Associates offers top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
