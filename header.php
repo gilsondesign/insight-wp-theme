@@ -84,10 +84,10 @@
             <a class="main-nav__menu-button js-toggle-nav" href="JavaScript:void(0);"><img src="<?php bloginfo('template_url'); ?>/img/mobile-menu-button.png" /></a>
 
             <ul class="main-nav__list js-main-nav">
-                <li class="main-nav__list-item"><a class="main-nav__link main-nav__link--current-page" href="<?php echo get_option('home'); ?>/">Home</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php echo get_option('home'); ?>/">Home</a></li>
                 <li class="main-nav__list-item"><a class="main-nav__link" href="<?php echo get_option('home'); ?>/#about-us">About Us</a></li>
                 <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/our-team">Our Team</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/#meet-our-team">Our Team</a></li>
                 <li class="main-nav__list-item"><a class="main-nav__link" href="#contact-section">Contact Us</a></li>
             </ul>
         </div>

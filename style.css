@@ -315,7 +315,7 @@ a:hover {
   color: white;
   text-align: center;
 }
-.main-nav__link:hover, .main-nav__link--current-page {
+.main-nav__link:hover {
   background-color: white;
   text-decoration: none;
   color: #003ca6;

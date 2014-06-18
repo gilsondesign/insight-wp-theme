@@ -78,8 +78,7 @@
         color: $white;
         text-align: center;
 
-        &:hover,
-        &--current-page {
+        &:hover {
             background-color: $white;
             text-decoration: none;
             color: palette(blue);

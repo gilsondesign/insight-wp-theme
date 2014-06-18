@@ -15,6 +15,7 @@ $(function () {
     }
 });
 
+// Not sure if we need this since Resources might be a different page
 $(function () {
     $("a[href*=#]:not([href=#])").click(function () {
         var e = this.hash;
