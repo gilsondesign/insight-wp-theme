@@ -230,29 +230,67 @@ a:hover {
 }
 
 .main-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1;
-  -webkit-transition: top 0.25s ease-in-out;
-  -moz-transition: top 0.25s ease-in-out;
-  transition: top 0.25s ease-in-out;
+  background-color: rgba(0, 60, 166, 0.95);
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    background-color: transparent;
+  }
 }
 .main-nav.headroom--not-top {
-  background-color: #003ca6;
+  position: fixed;
+  background-color: rgba(0, 60, 166, 0.95);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .main-nav.headroom--unpinned {
-  top: -100%;
-  -webkit-transition: top 0.25s ease-in-out;
-  -moz-transition: top 0.25s ease-in-out;
-  transition: top 0.25s ease-in-out;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .main-nav.headroom--pinned {
-  top: 0;
-  -webkit-transition: top 0.25s ease-in-out;
-  -moz-transition: top 0.25s ease-in-out;
-  transition: top 0.25s ease-in-out;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .main-nav__logo {
   display: block;
@@ -457,17 +495,36 @@ a:hover {
   background: no-repeat center center fixed;
   background-size: cover;
 }
-.home-banner:after {
-  content: '';
+.home-banner__text {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #003ca6;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-  opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 768px;
+  padding: 0 15px;
+  text-shadow: 2px 2px 0 black;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px) {
+  .home-banner__text {
+    width: 75%;
+    padding: 0;
+  }
+}
+.home-banner__text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  text-transform: none;
+}
+.home-banner__text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: white;
 }
 
 #main-wrapper {
@@ -503,7 +560,8 @@ a:hover {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
+    width: 40.29137%;
+    margin-left: 8.5298%;
   }
   #main-wrapper #recent-news:last-child {
     margin-right: 0;
@@ -514,7 +572,7 @@ a:hover {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
+    width: 57.35098%;
   }
   #main-wrapper #welcome:last-child {
     margin-right: 0;
@@ -524,6 +582,7 @@ a:hover {
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
+    margin-left: 8.5298%;
   }
   #main-wrapper #recent-news:last-child {
     margin-right: 0;

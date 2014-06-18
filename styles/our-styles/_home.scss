@@ -4,15 +4,38 @@
     background: no-repeat center center fixed;
     background-size: cover;
 
-    &:after {
-        content: '';
+    &__text {
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: palette(blue);
-        @include opacity(0.8);
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        max-width: 768px;
+        padding: 0 15px;
+        text-shadow: 2px 2px 0 $black;
+
+        @include media($tablet) {
+            width: 75%;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+            color: $white;
+            text-transform: none;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: $white;
+        }
+
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
     }
 }
 
@@ -44,17 +67,19 @@
 		}
 
 		#recent-news {
-			@include span-columns(6);
+			@include span-columns(5);
+            @include shift(1);
 		}
 	}
 
 	@include media($desktop) {
 		#welcome {
-			@include span-columns(8);
+			@include span-columns(7);
 		}
 
 		#recent-news {
 			@include span-columns(4);
+            @include shift(1);
 
 			.news-item {
 				border-bottom:solid 1px palette(gray, lightest);

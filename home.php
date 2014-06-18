@@ -7,17 +7,17 @@ Template Name: Home
 
 <?php get_header(); ?>
 
-<div class="home-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/forensic-accounting.jpg);">
-    <div class="container">
+<div class="home-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/forensic-accounting-test.jpg);">
+    <div class="home-banner__text">
         <h1>Forensic Accountants</h1>
         <p>We help you discover the who, what, where and why. Peters & Associates offers top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
     </div>
 </div>
 
 <section id="main-wrapper">
-        <div class="container">
-                <div id="welcome">
-                <h1>Welcome</h1>
+    <div class="container">
+        <div id="welcome">
+            <h1>Welcome</h1>
             <p>Clients hire us to help them find answers to the myriad of financial questions that arise when evaluating claims: How much is the loss? How do we know that to be true? Can we mitigate damages or expedite recovery?</p>
 
             <p>As a team of forensic accountants who've been working together since the 1980s, we not only do the fundamentals extremely well, but provide valuable insights to assist our clients' decision-making and strategies. </p>
@@ -28,19 +28,19 @@ Template Name: Home
         </div>
 
         <div id="recent-news">
-                <h1>In the News</h1>
-				<div class="news-item">
-					<?php query_posts('showposts=3'); ?>
-                    <?php while (have_posts()) : the_post(); ?>
+            <h1>In the News</h1>
+            <div class="news-item">
+                <?php query_posts('showposts=3'); ?>
+                <?php while (have_posts()) : the_post(); ?>
 
-                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-                        <span class="post-date"><?php the_date('F j, Y'); ?></span>
-                        <h4><?php the_title(); ?></h4>
-                        <?php the_excerpt(); ?>
-                        </article>
-                    <?php endwhile;?>
-                </div>
-                <a href="<?php bloginfo('url'); ?>/resources/" class="view-all">view all</a>
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+                    <span class="post-date"><?php the_date('F j, Y'); ?></span>
+                    <h4><?php the_title(); ?></h4>
+                    <?php the_excerpt(); ?>
+                    </article>
+                <?php endwhile;?>
+            </div>
+            <a href="<?php bloginfo('url'); ?>/resources/" class="view-all">view all</a>
         </div>
     </div>
 

@@ -1,24 +1,39 @@
 .main-nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
+    background-color: rgba(palette(blue), 0.95);
 
-    @include transition(top 0.25s ease-in-out);
+    @include media($tablet) {
+        background-color: transparent;
+    }
 
-    &.headroom--not-top  { background-color: palette(blue); }
+    &.headroom--not-top  {
+        position: fixed;
+        background-color: rgba(palette(blue), 0.95);
+
+        @include transform(translateY(-100%));
+        @include transition-property (transform);
+        @include transition-duration(0s);
+        @include transition-timing-function(ease-in-out);
+    }
 
     &.headroom--unpinned {
-        top: -100%;
+        //top: -100%;
 
-        @include transition(top 0.25s ease-in-out);
+        @include transform(translateY(-100%));
+        @include transition-property (transform);
+        @include transition-duration(0.25s);
+        @include transition-timing-function(ease-in-out);
     }
 
     &.headroom--pinned {
-        top: 0;
-
-        @include transition(top 0.25s ease-in-out)
+        @include transform(translateY(0));
+        @include transition-property (transform);
+        @include transition-duration(0.25s);
+        @include transition-timing-function(ease-in-out);
     }
 
     &__logo {
