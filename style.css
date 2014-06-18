@@ -229,6 +229,27 @@ a:hover {
   margin-bottom: 15px;
 }
 
+.single,
+.page {
+  padding-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .single,
+  .page {
+    padding-top: 64px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .single,
+  .page {
+    padding-top: 125px;
+  }
+}
+.single .main-nav,
+.page .main-nav {
+  background-color: #003ca6;
+}
+
 .main-nav {
   position: absolute;
   top: 0;
@@ -739,21 +760,4 @@ a:hover {
   #single-post article:last-child {
     margin-right: 0;
   }
-}
-
-.single-post {
-  padding-top: 50px;
-}
-@media screen and (min-width: 768px) {
-  .single-post {
-    padding-top: 64px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .single-post {
-    padding-top: 125px;
-  }
-}
-.single-post .main-nav {
-  background-color: #003ca6;
 }

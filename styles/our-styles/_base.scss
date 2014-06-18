@@ -162,3 +162,19 @@ a {
 		margin-bottom:15px;
 	}
 }
+
+// Classes added to body. Accounts for header sizes.
+.single,
+.page {
+    padding-top: 50px; // Phone nav height
+
+    @include media($tablet) {
+        padding-top: 64px;
+    }
+
+    @include media($desktop) {
+        padding-top: 125px;
+    }
+
+    .main-nav { background-color: palette(blue); }
+}

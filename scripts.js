@@ -10363,7 +10363,7 @@ $(function () {
 });
 
 $(function () {
-    if ($(".js-toggle-nav").css('display', '') != 'none' ) {
+    if ($(".js-toggle-nav").css('display') != 'none' ) {
         $(".js-main-nav li a").click(function () {
             $(".js-main-nav").slideToggle("fast");
         });
@@ -10400,7 +10400,7 @@ $('.home .main-nav').headroom({
 });
 
     // This should be for every page that ISN'T the Homepage
-$('.single-post .main-nav').headroom({
+$('.single .main-nav, .page .main-nav').headroom({
     offset: 0,
     tolerance : {
         down : 10,

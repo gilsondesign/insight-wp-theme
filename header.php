@@ -75,7 +75,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body id="home" <?php body_class('loading'); ?>>
+<body id="home" <?php body_class(); ?>>
     <nav class="main-nav">
         <div class="container">
             <a class="main-nav__logo" href="<?php echo get_option('home'); ?>/">

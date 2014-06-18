@@ -21,8 +21,6 @@
     }
 
     &.headroom--unpinned {
-        //top: -100%;
-
         @include transform(translateY(-100%));
         @include transition-property (transform);
         @include transition-duration(0.25s);
