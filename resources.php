@@ -26,7 +26,7 @@ Template Name: Resources
             <div class="news">
                 <h2>In the News</h2>
                 <ul class="link-list">
-                    <?php query_posts('showposts=3'); ?>
+                    <?php query_posts('showposts=10'); ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <li class="link-list__item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <span class="post-date"><?php the_time('F j, Y'); ?></span>
