@@ -58,7 +58,7 @@ table {
   border-spacing: 0;
 }
 
-#our-team #team-bios li:after {
+#our-team .team-bios li:after {
   content: "";
   display: table;
   clear: both;
@@ -225,8 +225,9 @@ a:hover {
     padding-right: 0px;
   }
 }
-.container p {
-  margin-bottom: 15px;
+
+p + p {
+  margin-top: 15px;
 }
 
 .single,
@@ -453,61 +454,97 @@ a:hover {
   display: table;
   clear: both;
 }
-#our-team aside {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
-}
-#our-team aside:last-child {
-  margin-right: 0;
-}
-#our-team article {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 74.41059%;
-}
-#our-team article:last-child {
-  margin-right: 0;
-}
 #our-team .subhead {
   margin-bottom: 50px;
 }
-#our-team .staff h3 ~ h3 {
-  padding-top: 25px;
+#our-team .aside {
+  margin-bottom: 40px;
+  max-width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#our-team .staff li {
-  padding-bottom: 15px;
+#our-team .aside:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-#our-team .staff .location {
+#our-team .aside__module {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+#our-team .aside__module:last-child {
+  margin-right: 0;
+}
+#our-team .aside li {
+  margin-top: 15px;
+}
+#our-team .aside li:first-child {
+  margin-top: 0;
+}
+#our-team .aside .location {
   font-size: 12px;
   font-weight: 500;
   font-style: italic;
 }
-#our-team #team-bios .bio-main {
+#our-team .team-bios .team-bios__group + .team-bios__group {
+  margin-top: 40px;
+}
+#our-team .team-bios .bio-main {
   overflow: hidden;
 }
-#our-team #team-bios li {
-  border-bottom: 1px solid;
-  border-bottom-color: lightgray;
+#our-team .team-bios li {
+  border-bottom: 1px solid lightgray;
   padding-bottom: 25px;
   padding-top: 25px;
 }
-#our-team #team-bios li:last-child {
-  border-bottom: 0px;
+#our-team .team-bios li:last-child {
+  border-bottom: 0;
 }
-#our-team #team-bios li:first-child {
-  padding-top: 0px;
+#our-team .team-bios li:first-child {
+  padding-top: 0;
 }
-#our-team #team-bios .btn {
+#our-team .team-bios .btn {
   margin-top: 15px;
 }
-#our-team img {
+#our-team .team-bios img {
   width: 150px;
   float: left;
   margin-right: 20px;
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  #our-team .aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  #our-team .aside:last-child {
+    margin-right: 0;
+  }
+  #our-team .aside__module {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+  }
+  #our-team .aside__module:last-child {
+    margin-right: 0;
+  }
+  #our-team .aside__module + .aside__module {
+    margin-top: 25px;
+  }
+  #our-team .team-bios {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+  }
+  #our-team .team-bios:last-child {
+    margin-right: 0;
+  }
 }
 
 .home-banner {

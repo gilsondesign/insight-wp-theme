@@ -1,44 +1,63 @@
 #our-team {
     @include outer-container;
-    aside { @include span-columns(3); }
-    article { @include span-columns(9); }
-    
-    .subhead {margin-bottom: 50px;}
-    
-    .staff {
-        h3~h3 {padding-top: 25px;}
-        li {padding-bottom: 15px;}
-        .location{
+
+    .subhead { margin-bottom: 50px; }
+
+    .aside {
+        margin-bottom: 40px;
+        @include outer-container;
+
+        &__module { @include span-columns(6); }
+
+        li {
+            margin-top: 15px;
+
+            &:first-child { margin-top: 0; }
+        }
+
+        .location {
             font-size: 12px;
             font-weight: 500;
             font-style: italic;
-        
         }
     }
-    
-    #team-bios { 
-        .bio-main {overflow: hidden;}
-        
+
+    .team-bios {
+        .team-bios__group + .team-bios__group { margin-top: 40px; }
+
+        .bio-main { overflow: hidden; }
+
         li {
-            border-bottom: 1px solid;
-            border-bottom-color: palette(gray, lightest);
-            padding-bottom:25px;
-            padding-top: 25px;
             @extend %clearfix;
-            
-            &:last-child { border-bottom: 0px; }
-            &:first-child { padding-top: 0px;}
+            border-bottom: 1px solid palette(gray, lightest);
+            padding-bottom: 25px;
+            padding-top: 25px;
+
+            &:last-child { border-bottom: 0; }
+
+            &:first-child { padding-top: 0; }
         }
-    
-        .btn {margin-top: 15px;}
+
+        .btn { margin-top: 15px; }
+
+        img {
+            width: 150px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 4px;
+        }
     }
 
-    img {
-        width:150px;
-        float: left;
-        margin-right: 20px;
-        border-radius: 4px;
-    }
 
+    @include media($tablet) {
+        .aside {
+            @include span-columns(3);
+
+            &__module { @include span-columns(12); }
+        }
+
+        .aside__module + .aside__module { margin-top: 25px; }
+
+        .team-bios { @include span-columns(9); }
+    }
 }
-

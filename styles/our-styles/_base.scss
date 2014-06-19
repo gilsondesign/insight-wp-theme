@@ -158,10 +158,14 @@ a {
 		padding-right: 0px;
 	}
 
-	p {
-		margin-bottom:15px;
-	}
+    // NO!
+	//p {
+	//	margin-bottom:15px;
+	//}
 }
+
+// This is better....
+p + p { margin-top: 15px; }
 
 // Classes added to body. Accounts for header sizes.
 .single,
