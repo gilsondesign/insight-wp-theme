@@ -9,7 +9,7 @@ Template Name: Our Team
 
 <div id="our-team">
     <section id="main-wrapper">
-        <div class="container" >
+        <div class="container">
             <h1>Our team</h1>
             <p class="subhead">Since 1996, Peters & Associates has provided forensic and investigative accounting services to over 150 insurance companies and law firms. Each partner brings more than 20 years of forensic accounting experience, resulting in unmatched knowledge, expertise and first-hand experience.</p>
 

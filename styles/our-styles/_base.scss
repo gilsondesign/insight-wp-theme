@@ -130,6 +130,7 @@ textarea,
 blockquote { line-height: $baseLineHeight; }
 
 a {
+    line-height: $baseLineHeight;
     color: palette(blue);
     text-decoration: none;
 

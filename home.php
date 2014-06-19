@@ -27,20 +27,18 @@ Template Name: Home
             <p>Our clients appreciate that we know what to look for, how and where to find it, that we express what it means in clear and concise language. They also appreciate that we pursue this information with unmatched professionalism, sensitivity and efficiency.</p>
         </div>
 
-        <div id="recent-news">
-            <h1>In the News</h1>
-            <div class="news-item">
+        <div class="news">
+            <h2>In the News</h2>
+            <ul class="link-list">
                 <?php query_posts('showposts=3'); ?>
                 <?php while (have_posts()) : the_post(); ?>
-
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-                    <span class="post-date"><?php the_date('F j, Y'); ?></span>
-                    <h4><?php the_title(); ?></h4>
-                    <?php the_excerpt(); ?>
-                    </article>
+                    <li class="link-list__item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <span class="post-date"><?php the_time('F j, Y'); ?></span>
+                        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                    </li>
                 <?php endwhile;?>
-            </div>
-            <a href="<?php bloginfo('url'); ?>/resources/" class="view-all">view all</a>
+                <li class="link-list__item"><a href="<?php bloginfo('url'); ?>/resources/" class="view-all">view all</a></li>
+            </ul>
         </div>
     </div>
 

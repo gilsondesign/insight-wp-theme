@@ -39,12 +39,12 @@
     }
 }
 
-#main-wrapper {
-	padding: 40px 0;
+#main-wrapper {	padding: 40px 0; }
 
-	#inspirational-quote {
+.home {
+    #inspirational-quote {
+		text-align: center;
 
-		text-align:center;
 		.quote {
 			font-weight:300;
 			font-size:$font-xlarge;
@@ -53,11 +53,11 @@
 		}
 
 		.author {
-			font-weight:300;
-			color:palette(gray);
-			font-size:$baseFontSize;
-			padding-top:15px;
-			display:block;
+			font-weight: 300;
+			color: palette(gray);
+			font-size: $baseFontSize;
+			padding-top: 15px;
+			display: block;
 		}
 	}
 
@@ -66,7 +66,7 @@
 			@include span-columns(6);
 		}
 
-		#recent-news {
+		.news {
 			@include span-columns(5);
             @include shift(1);
 		}
@@ -77,34 +77,9 @@
 			@include span-columns(7);
 		}
 
-		#recent-news {
+		.news {
 			@include span-columns(4);
             @include shift(1);
-
-			.news-item {
-				border-bottom:solid 1px palette(gray, lightest);
-				padding-bottom:6px;
-				margin-bottom:12px;
-
-
-				.post-date {
-					font-size:12px;
-					text-transform:uppercase;
-					color:palette(gray, lighter);
-					display:block;
-					padding-bottom:4px;
-				}
-
-				a {
-					display:block;
-					padding-bottom:15px;
-				}
-			}
-
-			.view-all {
-				color:palette(gray);
-				float:right;
-			}
 		}
 	}
 }
