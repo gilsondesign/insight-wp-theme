@@ -49,35 +49,30 @@ Template Name: Home
         	<h2>Meet our Partners</h2>
             <div id="partners">
                 <div>
-                     <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/knight.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>Terrence S. Knight</h4>
-                    <p class="location">Chicago, IL</p>
+                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/reynolds.jpg" alt="<?php bloginfo('name'); ?>" />
+                    <h4>Curtis J. Reynolds</h4>
+                    <p class="location">Milwaukee, WI</p>
+                </div>
+				<div>
+                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/bestul.jpg" alt="<?php bloginfo('name'); ?>" />
+                    <h4>Jennifer G. Bestul</h4>
+                    <p class="location">Minneapolis, MN</p>
+                </div>
+				<div>
+                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/friestedt.jpg" alt="<?php bloginfo('name'); ?>" />
+                    <h4>John D. Friestedt</h4>
+                    <p class="location">Milwaukee, WI</p>
                 </div>
                 <div>
                     <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/denson.jpg" alt="<?php bloginfo('name'); ?>" />
                     <h4>Kathy M. Denson</h4>
                     <p class="location">Denver, CO</p>
                 </div>
-                <div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/friestedt.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>John D. Friestedt</h4>
-                    <p class="location">Milwaukee, WI</p>
+				<div>
+                     <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/knight.jpg" alt="<?php bloginfo('name'); ?>" />
+                    <h4>Terrence S. Knight</h4>
+                    <p class="location">Chicago, IL</p>
                 </div>
-                <div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/reynolds.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>Curtis J. Reynolds</h4>
-                    <p class="location">Milwaukee, WI</p>
-                </div>
-                <div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/bestul.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>Jennifer G. Bestul</h4>
-                    <p class="location">Minneapolis, MN</p>
-                </div>
-                <div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/stone.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>Sandy Stone</h4>
-                    <p class="location">Bethel Park, PA</p>
-               </div>
            </div>
         </div>
     </div>
