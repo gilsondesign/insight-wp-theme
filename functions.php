@@ -66,7 +66,7 @@
 
 	//custom excerpt filter length for homepage
 	function custom_excerpt_length( $length ) {
-	return 80;
+	return 20;
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
