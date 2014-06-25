@@ -27,7 +27,7 @@ Template Name: Resources
             <div id="recent-news">
                 <h1>In the News</h1>
                 <div id="posts-list">
-                   <?php query_posts('showposts=25'); ?>
+                   <?php query_posts( array( 'paged' => get_query_var('paged') ) ); ?>
                     <?php while (have_posts()) : the_post(); ?>
 
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
@@ -40,8 +40,11 @@ Template Name: Resources
                                 <hr />
                             </div>
                         </article>
-
+					
                     <?php endwhile;?>
+                    <?php wp_pagenavi(); ?>
+                   
+                    
                 </div>
             </div>
         </div>

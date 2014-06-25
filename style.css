@@ -972,6 +972,25 @@ p + p {
   clear: both;
   margin-top: 10px;
 }
+#recent-news #posts-list .wp-pagenavi {
+  font-size: 13px;
+}
+#recent-news #posts-list .wp-pagenavi .current {
+  padding: 4px 8px;
+  background: #003ca6;
+  color: white;
+  margin-left: 4px;
+}
+#recent-news #posts-list .wp-pagenavi .page {
+  padding: 4px 8px;
+  background: #a8a8a8;
+  color: white;
+  margin-left: 4px;
+}
+#recent-news #posts-list .wp-pagenavi .nextpostslink {
+  padding: 4px 8px;
+  margin-left: 4px;
+}
 
 #single-post .post-date {
   display: block;

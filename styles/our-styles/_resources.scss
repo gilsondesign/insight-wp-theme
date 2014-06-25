@@ -61,6 +61,30 @@
 			}
 
 		}
+		
+		
+		.wp-pagenavi {
+			font-size:$font-xsmall;
+			
+			.current {
+				padding:4px 8px; 
+				background:$blue;
+				color:$white;
+				margin-left:4px;
+			}
+			
+			.page {
+				padding:4px 8px; 
+				background:palette(gray, lighter);
+				color:$white;
+				margin-left:4px;
+			}
+			
+			.nextpostslink {
+				padding:4px 8px; 
+				margin-left:4px;
+			}
+		}
 	}
 
 
