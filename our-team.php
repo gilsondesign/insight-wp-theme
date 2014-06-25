@@ -156,7 +156,7 @@ Template Name: Our Team
                             <div class="bio-main">
                                 <h3 id="stone">Sandra M. Stone, CFE</h3>
                                 <p>Sandy has a BA (Cum Laude) degree in Business and Economics from the University of Pittsburgh.  She is a CFE and has over 25 years of professional experience in evaluating claims and in accounting.  For over a decade, Sandy has investigated complex commercial crime, fidelity bond and cyber claims as a Senior Claims Examiner and Officer at Chubb & Son.  She has taught accounting courses and presented at various fidelity/crime conferences.  Sandy has successfully participated in mediations, testified in court, and given numerous depositions.  At Peters & Associates, she specializes in evaluating losses arising from employee dishonesty and works on 3rd party liability, 1st party property and business income losses.</p>
-                                <a href="mailto:sstone@paacpas.com" class="btn">Contact Ann</a>
+                                <a href="mailto:sstone@paacpas.com" class="btn">Contact Sandy</a>
                             </div>
                         </li>
                     </ul>
