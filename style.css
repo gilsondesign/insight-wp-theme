@@ -58,7 +58,7 @@ table {
   border-spacing: 0;
 }
 
-#our-team .team-bios li:after, #recent-news .news__navigation:after {
+#our-team .team-bios li:after {
   content: "";
   display: table;
   clear: both;
@@ -177,7 +177,12 @@ h4 {
 
 input[type="text"], input[type="email"], textarea {
   padding: 6px;
-  width: 80%;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  input[type="text"], input[type="email"], textarea {
+    width: 80%;
+  }
 }
 
 p,
@@ -533,6 +538,59 @@ p + p {
   color: white;
 }
 
+.home #news {
+  padding-top: 20px;
+}
+.home #news .post-date {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: #a8a8a8;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .home #welcome {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+  }
+  .home #welcome:last-child {
+    margin-right: 0;
+  }
+  .home #news {
+    padding-top: 0px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  .home #news:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .home #welcome {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+  }
+  .home #welcome:last-child {
+    margin-right: 0;
+  }
+  .home #news {
+    padding-top: 0px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 8.5298%;
+  }
+  .home #news:last-child {
+    margin-right: 0;
+  }
+}
 .home #inspirational-quote {
   text-align: center;
 }
@@ -612,55 +670,6 @@ p + p {
   padding-top: 15px;
   display: block;
 }
-@media screen and (min-width: 768px) {
-  .home #welcome {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-  }
-  .home #welcome:last-child {
-    margin-right: 0;
-  }
-  .home .news {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 40.29137%;
-    margin-left: 8.5298%;
-  }
-  .home .news:last-child {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .home #welcome {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 57.35098%;
-  }
-  .home #welcome:last-child {
-    margin-right: 0;
-  }
-  .home .news {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 8.5298%;
-  }
-  .home .news:last-child {
-    margin-right: 0;
-  }
-  .home .news .post-date {
-    display: block;
-    margin-bottom: 2px;
-    font-size: 12px;
-    color: #a8a8a8;
-    text-transform: uppercase;
-  }
-}
 
 #meet-our-team {
   padding: 25px 0 40px 0;
@@ -698,6 +707,23 @@ p + p {
 }
 #meet-our-team #partners div h4 {
   padding-bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  #meet-our-team #partners div {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+  }
+  #meet-our-team #partners div:last-child {
+    margin-right: 0;
+  }
+  #meet-our-team #partners div:nth-child(6n) {
+    margin-right: 0;
+  }
+  #meet-our-team #partners div:nth-child(6n+1) {
+    clear: left;
+  }
 }
 @media screen and (min-width: 1025px) {
   #meet-our-team #partners div {
@@ -740,6 +766,17 @@ p + p {
 #about-us .area p {
   font-size: 14px;
 }
+@media screen and (min-width: 768px) {
+  #about-us .area {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  #about-us .area:last-child {
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 1025px) {
   #about-us .area {
     float: left;
@@ -754,6 +791,64 @@ p + p {
 
 #contact-section {
   padding: 40px 0;
+}
+#contact-section #our-locations {
+  padding-top: 20px;
+}
+#contact-section #our-locations .location {
+  padding-bottom: 15px;
+}
+#contact-section #our-locations .location p + p {
+  margin-top: 0px;
+}
+#contact-section #our-locations .location p {
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  #contact-section #contact-us {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  #contact-section #contact-us:last-child {
+    margin-right: 0;
+  }
+  #contact-section #our-locations {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0;
+    padding-top: 0px;
+  }
+  #contact-section #our-locations:last-child {
+    margin-right: 0;
+  }
+  #contact-section #our-locations .location {
+    max-width: 1008px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+  }
+  #contact-section #our-locations .location:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #contact-section #our-locations .location:last-child {
+    margin-right: 0;
+  }
+  #contact-section #our-locations .location:nth-child(2n) {
+    margin-right: 0;
+  }
+  #contact-section #our-locations .location:nth-child(2n+1) {
+    clear: left;
+  }
 }
 @media screen and (min-width: 1025px) {
   #contact-section #contact-us {
@@ -771,6 +866,7 @@ p + p {
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-right: 0;
+    padding-top: 0px;
   }
   #contact-section #our-locations:last-child {
     margin-right: 0;
@@ -783,7 +879,6 @@ p + p {
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    padding-bottom: 15px;
   }
   #contact-section #our-locations .location:after {
     content: "";
@@ -799,61 +894,62 @@ p + p {
   #contact-section #our-locations .location:nth-child(2n+1) {
     clear: left;
   }
-  #contact-section #our-locations .location p + p {
-    margin-top: 0px;
-  }
-  #contact-section #our-locations .location p {
-    margin-bottom: 2px;
-    font-size: 14px;
-  }
 }
 
-#recent-news .news__navigation .previous {
-  float: left;
-}
-#recent-news .news__navigation .next {
-  float: right;
-}
-#recent-news .resources {
-  margin-bottom: 40px;
+#recent-news #recent-news {
+  padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
-  #recent-news .resources {
+  #recent-news #resources {
     margin-bottom: 0;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
   }
-  #recent-news .resources:last-child {
+  #recent-news #resources:last-child {
     margin-right: 0;
   }
-  #recent-news .news {
+  #recent-news #recent-news {
+    padding-top: 0px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
     margin-left: 8.5298%;
   }
-  #recent-news .news:last-child {
+  #recent-news #recent-news:last-child {
     margin-right: 0;
   }
 }
-#recent-news .link-list__item {
+@media screen and (min-width: 1025px) {
+  #recent-news #resources {
+    margin-bottom: 0;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  #recent-news #resources:last-child {
+    margin-right: 0;
+  }
+  #recent-news #recent-news {
+    padding-top: 0px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 8.5298%;
+  }
+  #recent-news #recent-news:last-child {
+    margin-right: 0;
+  }
+}
+#recent-news .link-list li {
   margin-top: 15px;
 }
-#recent-news .link-list__item:first-child {
+#recent-news .link-list li:first-child {
   margin-top: 0;
-}
-#recent-news .view-all {
-  color: #515151;
-}
-#recent-news .post-date {
-  display: block;
-  margin-bottom: 2px;
-  font-size: 12px;
-  color: #a8a8a8;
-  text-transform: uppercase;
 }
 #recent-news #posts-list .post-date {
   font-size: 12px;
@@ -875,31 +971,6 @@ p + p {
   border: 0px;
   clear: both;
   margin-top: 10px;
-}
-@media screen and (min-width: 1025px) {
-  #recent-news #posts-list #recent-news {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 74.41059%;
-  }
-  #recent-news #posts-list #recent-news:last-child {
-    margin-right: 0;
-  }
-  #recent-news #posts-list #resource-links {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    margin-right: 0;
-  }
-  #recent-news #posts-list #resource-links:last-child {
-    margin-right: 0;
-  }
-  #recent-news #posts-list #resource-links a {
-    padding-bottom: 10px;
-    display: block;
-  }
 }
 
 #single-post .post-date {

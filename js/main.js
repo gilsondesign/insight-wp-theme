@@ -55,7 +55,7 @@ $('.single .main-nav, .page .main-nav').headroom({
 
 $(window).load(function() {
 	var pageWidth = $(window).width();
-	if (pageWidth > 1024) {
+	if (pageWidth > 767) {
 	
 	$('.container').each(function(){  
             

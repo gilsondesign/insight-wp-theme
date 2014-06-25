@@ -115,7 +115,11 @@ h4 {
 
 input[type="text"], input[type="email"], textarea {
 	padding:6px;
-	width:80%;
+	width:100%;
+	
+	@include media($desktop) {
+		width:80%;
+	}
 }
 
 
