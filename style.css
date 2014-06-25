@@ -527,10 +527,20 @@ p + p {
   }
 }
 .home-banner__text h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   color: white;
   text-transform: none;
+}
+@media screen and (min-width: 768px) {
+  .home-banner__text h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .home-banner__text h1 {
+    font-size: 60px;
+  }
 }
 .home-banner__text p {
   font-size: 18px;
