@@ -9,6 +9,7 @@
 *:after { @include box-sizing(border-box); }
 
 html {
+    height: 100%; // Required for sticky footer
     color: $textColor;
     font-family: $sansFontFamily;
     font-weight: 400;
@@ -18,8 +19,10 @@ html {
 }
 
 body {
+    height: 100%; // Required for sticky footer
     font-family: $sansFontFamily;
     color: palette(gray);
+    overflow-x: hidden;
 }
 
 img { max-width: 100%; }
@@ -149,8 +152,8 @@ a {
 	}
 
 	@include media($desktop) {
-		padding-left: 0px;
-		padding-right: 0px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 }
@@ -158,18 +161,28 @@ a {
 // This is better....
 p + p { margin-top: 15px; }
 
-// Classes added to body. Accounts for header sizes.
-.single,
-.page {
-    padding-top: 50px; // Phone nav height
+
+// Accounts for header offset and sticky footer
+// Had to name this .page-wrap due to Wordpress conflict
+.page-wrap {
+    min-height: calc(100% - #{$footer__height}); // Sticky footer magic
+    padding-top: $header__height--small;
 
     @include media($tablet) {
-        padding-top: 64px;
+        padding-top: $header__height--medium;
     }
 
     @include media($desktop) {
-        padding-top: 125px;
+        padding-top: $header__height--large;
     }
 
-    .main-nav { background-color: palette(blue); }
+    &--home { padding-top: 0; }
+}
+
+.main-nav { background-color: palette(blue); }
+
+// Generic section spacing
+.section-wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }

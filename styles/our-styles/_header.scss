@@ -7,7 +7,7 @@
     background-color: rgba(palette(blue), 0.95);
 
     @include media($tablet) {
-        background-color: transparent;
+        //background-color: transparent;
     }
 
     &.headroom--not-top  {

@@ -7,8 +7,8 @@ Template Name: Our Team
 
 <?php get_header(); ?>
 
-<div id="our-team">
-    <section id="main-wrapper">
+<div id="our-team" class="page-wrap page-wrap--our-team">
+    <div class="section-wrap">
         <div class="container">
             <h1>Our team</h1>
             <p class="subhead">Since 1996, Peters & Associates has provided forensic and investigative accounting services to over 150 insurance companies and law firms. Each partner brings more than 20 years of forensic accounting experience, resulting in unmatched knowledge, expertise and first-hand experience.</p>
@@ -16,7 +16,7 @@ Template Name: Our Team
             <aside class="aside">
                 <div class="aside__module">
                     <h3>Partners</h3>
-                    <ul>                      
+                    <ul>
                         <li>
                             <a href="#reynolds">Curtis J. Reynolds</a>
                             <p class="location">Milwaukee, WI</p>
@@ -37,7 +37,7 @@ Template Name: Our Team
                             <a href="#knight">Terrence S. Knight</a>
                             <p class="location">Chicago, IL</p>
                         </li>
-                        
+
                     </ul>
                 </div>
 
@@ -112,7 +112,7 @@ Template Name: Our Team
                                 <a href="mailto:curt@insightforensics.com" class="btn">Contact Terrence</a>
                             </div>
                         </li>
-                        
+
                     </ul>
                 </div>
 
@@ -163,7 +163,7 @@ Template Name: Our Team
                 </div>
             </article>
         </div>
-    </section>
+    </div>
 </div>
 
 

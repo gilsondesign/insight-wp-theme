@@ -39,28 +39,26 @@
     }
 }
 
-#main-wrapper {	padding: 40px 0; }
-
 .home {
     #inspirational-quote {
 		text-align: center;
-		
+
 		#quote-flourish {
 			padding-bottom:10px;
 			@include outer-container();
-			
+
 			#quote-hr-left {
 				@include span-columns(5);
 				padding-left:15%;
-				
+
 			}
-			
+
 			#quote-hr-right {
 				@include span-columns(5);
 				@include omega();
 				padding-right:15%;
 			}
-			
+
 			hr {
 				color:palette(gray, lighter);
 				background-color:palette(gray, lighter);
@@ -69,10 +67,10 @@
 				clear: both;
 				margin-top:20px;
 			}
-			
+
 			#quote-img {
 				@include span-columns(2);
-				
+
 				span {
 					background:$blue;
 					border-radius:50%;
@@ -81,7 +79,7 @@
 					display:inline-block;
 					width:45px;
 					height:45px;
-					
+
 					p {
 						font-family:Georgia, "Times New Roman", Times, serif;
 						font-size: 55px;
@@ -173,7 +171,7 @@
 			padding-bottom:6px;
 			color:$blue;
 		}
-		
+
 		p + p {
 			margin-top:6px;
 		}
@@ -189,24 +187,24 @@
 
 #contact-section {
 	padding:40px 0;
-	
-	
+
+
 	@include media($desktop) {
 		#contact-us {
 			@include span-columns(6);
 		}
-		
+
 		#our-locations {
 			@include span-columns(6);
 			@include omega();
-			
+
 			.location {
 				@include outer-container();
 				@include span-columns(6);
 				@include omega(2n);
-				
+
 				padding-bottom:15px;
-				
+
 				p + p {
 					margin-top:0px;
 				}

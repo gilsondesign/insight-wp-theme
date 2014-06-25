@@ -73,6 +73,7 @@ table {
 }
 
 html {
+  height: 100%;
   color: #bada55;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -82,8 +83,10 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: "Roboto", sans-serif;
   color: #515151;
+  overflow-x: hidden;
 }
 
 img {
@@ -216,8 +219,8 @@ a:hover {
 }
 @media screen and (min-width: 1025px) {
   .container {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -225,25 +228,31 @@ p + p {
   margin-top: 15px;
 }
 
-.single,
-.page {
-  padding-top: 50px;
+.page-wrap {
+  min-height: calc(100% - 139px);
+  padding-top: 53px;
 }
 @media screen and (min-width: 768px) {
-  .single,
-  .page {
-    padding-top: 64px;
+  .page-wrap {
+    padding-top: 67px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .single,
-  .page {
-    padding-top: 125px;
+  .page-wrap {
+    padding-top: 128px;
   }
 }
-.single .main-nav,
-.page .main-nav {
+.page-wrap--home {
+  padding-top: 0;
+}
+
+.main-nav {
   background-color: #003ca6;
+}
+
+.section-wrap {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .main-nav {
@@ -253,11 +262,6 @@ p + p {
   left: 0;
   z-index: 1;
   background-color: rgba(0, 60, 166, 0.95);
-}
-@media screen and (min-width: 768px) {
-  .main-nav {
-    background-color: transparent;
-  }
 }
 .main-nav.headroom--not-top {
   position: fixed;
@@ -528,10 +532,6 @@ p + p {
   color: white;
 }
 
-#main-wrapper {
-  padding: 40px 0;
-}
-
 .home #inspirational-quote {
   text-align: center;
 }
@@ -799,9 +799,6 @@ p + p {
   }
 }
 
-#recent-news {
-  padding: 40px 0;
-}
 #recent-news .news__navigation .previous {
   float: left;
 }
@@ -896,9 +893,6 @@ p + p {
   }
 }
 
-#single-post {
-  padding: 40px;
-}
 #single-post .post-date {
   display: block;
   margin-bottom: 2px;
