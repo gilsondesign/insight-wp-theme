@@ -7,7 +7,7 @@
     background-color: rgba(palette(blue), 0.95);
 
     @include media($tablet) {
-        //background-color: transparent;
+        @at-root .home & { background-color: transparent; } // Make the background transparent ONLY on the homepage
     }
 
     &.headroom--not-top  {

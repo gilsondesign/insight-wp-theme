@@ -246,10 +246,6 @@ p + p {
   padding-top: 0;
 }
 
-.main-nav {
-  background-color: #003ca6;
-}
-
 .section-wrap {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -262,6 +258,11 @@ p + p {
   left: 0;
   z-index: 1;
   background-color: rgba(0, 60, 166, 0.95);
+}
+@media screen and (min-width: 768px) {
+  .home .main-nav {
+    background-color: transparent;
+  }
 }
 .main-nav.headroom--not-top {
   position: fixed;
