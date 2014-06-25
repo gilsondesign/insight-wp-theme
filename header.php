@@ -86,9 +86,9 @@
             <ul class="main-nav__list js-main-nav">
                 <li class="main-nav__list-item"><a class="main-nav__link" href="<?php echo get_option('home'); ?>/">Home</a></li>
                 <li class="main-nav__list-item"><a class="main-nav__link" href="<?php echo get_option('home'); ?>/#about-us">About Us</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php echo get_option('home'); ?>/#contact-section">Contact Us</a></li>
                 <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/our-team">Our Team</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="#contact-section">Contact Us</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="<?php bloginfo('url'); ?>/resources">Resources</a></li>
             </ul>
         </div>
     </nav>

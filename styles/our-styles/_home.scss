@@ -44,15 +44,61 @@
 .home {
     #inspirational-quote {
 		text-align: center;
+		
+		#quote-flourish {
+			padding-bottom:10px;
+			@include outer-container();
+			
+			#quote-hr-left {
+				@include span-columns(5);
+				padding-left:15%;
+				
+			}
+			
+			#quote-hr-right {
+				@include span-columns(5);
+				@include omega();
+				padding-right:15%;
+			}
+			
+			hr {
+				color:palette(gray, lighter);
+				background-color:palette(gray, lighter);
+				height: 1px;
+				border: 0px;
+				clear: both;
+				margin-top:20px;
+			}
+			
+			#quote-img {
+				@include span-columns(2);
+				
+				span {
+					background:$blue;
+					border-radius:50%;
+					font-size:$font-large;
+					color:$white;
+					display:inline-block;
+					width:45px;
+					height:45px;
+					
+					p {
+						font-family:Georgia, "Times New Roman", Times, serif;
+						font-size: 55px;
+						line-height: 1.32;
 
-		.quote {
+					}
+				}
+			}
+		}
+		#quote {
 			font-weight:300;
 			font-size:$font-xlarge;
 			color:palette(blue);
 			display:block;
 		}
 
-		.author {
+		#author {
 			font-weight: 300;
 			color: palette(gray);
 			font-size: $baseFontSize;
@@ -111,23 +157,64 @@
 }
 
 #about-us {
-	padding:40px 0 20px 0;
+	padding:40px 0;
 	background: palette(gray, lightest);
 
 	.area {
-		padding-bottom:20px;
+		margin:20px 0;
+		padding:20px;
+		background:palette(blue, lighter);
+		border-radius:4px;
+		color:$white;
 
 		h4 {
-			margin:20px 0 4px 0;
+			margin:0 0 6px 0;
 			border-bottom:solid 1px palette(gray, ligher);
 			padding-bottom:6px;
+			color:$blue;
+		}
+		
+		p + p {
+			margin-top:6px;
 		}
 
 		p {
-			margin-bottom:2px;
+			font-size:14px;
 		}
 		@include media($desktop) {
 			@include span-columns(4);
+		}
+	}
+}
+
+#contact-section {
+	padding:40px 0;
+	
+	
+	@include media($desktop) {
+		#contact-us {
+			@include span-columns(6);
+		}
+		
+		#our-locations {
+			@include span-columns(6);
+			@include omega();
+			
+			.location {
+				@include outer-container();
+				@include span-columns(6);
+				@include omega(2n);
+				
+				padding-bottom:15px;
+				
+				p + p {
+					margin-top:0px;
+				}
+				p {
+					margin-bottom:2px;
+					font-size:14px;
+				}
+			}
 		}
 	}
 }

@@ -10,7 +10,7 @@ Template Name: Home
 <div class="home-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/forensic-accounting-test.jpg);">
     <div class="home-banner__text">
         <h1>Forensic Accountants</h1>
-        <p>We help you discover the who, what, where and why. Peters & Associates offers top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
+        <p>We help you discover the who, what, where and why. Insight offers top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
     </div>
 </div>
 
@@ -47,29 +47,33 @@ Template Name: Home
         	<h2>Meet our Partners</h2>
             <div id="partners">
                 <div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/reynolds.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>Curtis J. Reynolds</h4>
+                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/reynolds.jpg" alt="Curtis J. Reynolds" />
+                    <h4><a href="<?php bloginfo('url'); ?>/our-team/#reynolds">Curtis J. Reynolds</a></h4>
                     <p class="location">Milwaukee, WI</p>
                 </div>
 				<div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/bestul.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>Jennifer G. Bestul</h4>
+                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/bestul.jpg" alt="Jennifer G. Bestul" />
+                    <h4><a href="<?php bloginfo('url'); ?>/our-team/#bestul">Jennifer G. Bestul</a></h4>
                     <p class="location">Minneapolis, MN</p>
                 </div>
 				<div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/friestedt.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>John D. Friestedt</h4>
+                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/friestedt.jpg" alt="John D. Friestedt" />
+                    <h4><a href="<?php bloginfo('url'); ?>/our-team/#friestedt">John D. Friestedt</a></h4>
                     <p class="location">Milwaukee, WI</p>
                 </div>
                 <div>
-                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/denson.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>Kathy M. Denson</h4>
+                    <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/denson.jpg" alt="Kathy M. Denson" />
+                    <h4><a href="<?php bloginfo('url'); ?>/our-team/#denson">Kathy M. Denson</a></h4>
                     <p class="location">Denver, CO</p>
                 </div>
 				<div>
-                     <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/knight.jpg" alt="<?php bloginfo('name'); ?>" />
-                    <h4>Terrence S. Knight</h4>
+                     <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/knight.jpg" alt="Terrence S. Knight" />
+                    <h4><a href="<?php bloginfo('url'); ?>/our-team/#knight">Terrence S. Knight</a></h4>
                     <p class="location">Chicago, IL</p>
+                </div>
+                <div>
+                	<img src="<?php bloginfo('template_url'); ?>/img/spacer.png" alt="" />
+                	<a href="<?php bloginfo('url'); ?>/our-team/#our-staff" class="btn">Meet our Staff</a>
                 </div>
            </div>
         </div>
@@ -77,8 +81,19 @@ Template Name: Home
 
     <div class="container">
     	<div id="inspirational-quote">
-        	<span class="quote">The achievements of an organization are the results of the combined effort of each individual.</span>
-			<span class="author">- Vince Lombardi, Green Bay Packers</span>
+        	<div id="quote-flourish">
+        		<div id="quote-hr-left">
+                	<hr />
+                </div>
+                <div id="quote-img">
+                	<span><p>&ldquo;</p></span>
+                </div>
+                <div id="quote-hr-right">
+                	<hr />
+                </div>
+            </div>
+        	<div id="quote">The achievements of an organization are the results of the combined effort of each individual.</div>
+			<div id="author">- Vince Lombardi, Green Bay Packers</div>
         </div>
     </div>
 </section>
@@ -104,7 +119,7 @@ Template Name: Home
             <p>Third-Party Liability</p>
         </div>
         <div class="area">
-                <h4>Litigation</h4>
+            <h4>Litigation</h4>
             <p>Damage Evaluation</p>
             <p>Economic Loss</p>
             <p>Expert Testimony</p>
@@ -115,9 +130,9 @@ Template Name: Home
 
         </div>
         <div class="area">
-                <h4>General</h4>
+            <h4>General</h4>
             <p>Record Reconstruction</p>
-                        <p>Contract Compliance</p>
+            <p>Contract Compliance</p>
 
         </div>
     </div>
@@ -131,18 +146,11 @@ Template Name: Home
         <div id="contact-us">
             <h3>Contact Us</h3>
             <p></p>
-            <?php echo do_shortcode ('[contact-form-7 id="9" title="Contact form"]'); ?>
+            <?php echo do_shortcode ('[contact-form-7 id="11" title="Contact form"]'); ?>
         </div>
         <div id="our-locations">
             <h3>Our Office Locations</h3>
             <div>
-                <div class="location">
-                    <h4>Atlanta</h4>
-                    <p>2470 Windy Hill Road SE</p>
-                    <p>PMB 2070 Suite 300</p>
-                    <p>Marietta, GA 30067</p>
-                    <p>P: 404 630 5862</p>
-                </div>
                 <div class="location">
                     <h4>Chicago</h4>
                     <p>7500 W Grand Avenue</p>
@@ -150,6 +158,7 @@ Template Name: Home
                     <p>Gurnee, Illinois 60031</p>
                     <p>P: 224 643 7496</p>
                     <p>F: 224 643 7493</p>
+                    <p><a href="https://www.google.com/maps/place/7500+W+Grand+Ave/@42.3859979,-87.988289,17z/data=!3m1!4b1!4m2!3m1!1s0x880f8fdcb49ea1c3:0xd3b8897286c8228" target="_blank">view map</a></p>
                 </div>
                 <div class="location">
                     <h4>Denver</h4>
@@ -158,6 +167,7 @@ Template Name: Home
                     <p>Parker, Colorado 80138</p>
                     <p>P: 303 805 1870</p>
                     <p>F: 303 805 1823</p>
+                    <p><a href="https://www.google.com/maps/place/19590+E+Mainstreet/@39.5182617,-104.7619739,17z/data=!3m1!4b1!4m2!3m1!1s0x876c91fb19e58391:0x25735649f4e6f474" target="_blank">view map</a></p>
                 </div>
                 <div class="location">
                     <h4>Milwaukee</h4>
@@ -166,6 +176,7 @@ Template Name: Home
                     <p>New Berlin, Wisconsin 53151</p>
                     <p>P: 262 782 3307</p>
                     <p>F: 262 782 3309</p>
+                    <p><a href="https://www.google.com/maps/place/2665+S+Moorland+Rd/@42.9967686,-88.1086331,17z/data=!3m1!4b1!4m2!3m1!1s0x880508a2619e8c69:0xaeb7c7262b7680c2" target="_blank">view map</a></p>
                 </div>
                 <div class="location">
                     <h4>Minneapolis</h4>
@@ -174,6 +185,7 @@ Template Name: Home
                     <p>Apple Valley, Minnesota 55124</p>
                     <p>P: 952 432 2280</p>
                     <p>F: 952 432 2281</p>
+                    <p><a href="https://www.google.com/maps/place/7373+147th+St+W/@44.735154,-93.214247,17z/data=!3m1!4b1!4m2!3m1!1s0x87f6312be03621eb:0x90dbd0954548a647" target="_blank">view map</a></p>
                 </div>
             </div>
         </div>

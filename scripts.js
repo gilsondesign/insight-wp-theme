@@ -10408,7 +10408,31 @@ $('.single .main-nav, .page .main-nav').headroom({
     },
 });
 
-})(jQuery);;/*! Respond.js v1.4.0: min/max-width media query polyfill * Copyright 2013 Scott Jehl
+$(window).load(function() {
+	var pageWidth = $(window).width();
+	if (pageWidth > 1024) {
+	
+	$('.container').each(function(){  
+            
+            var highestBox = 0;
+            $('.area', this).each(function(){
+            
+                if($(this).height() > highestBox) 
+                   highestBox = $(this).height(); 
+            });  
+            
+            $('.area',this).height(highestBox);
+            
+        
+    });  
+	
+	}
+});
+
+})(jQuery);
+
+
+;/*! Respond.js v1.4.0: min/max-width media query polyfill * Copyright 2013 Scott Jehl
  * Licensed under https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
  *  */
 

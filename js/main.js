@@ -53,4 +53,27 @@ $('.single .main-nav, .page .main-nav').headroom({
     },
 });
 
+$(window).load(function() {
+	var pageWidth = $(window).width();
+	if (pageWidth > 1024) {
+	
+	$('.container').each(function(){  
+            
+            var highestBox = 0;
+            $('.area', this).each(function(){
+            
+                if($(this).height() > highestBox) 
+                   highestBox = $(this).height(); 
+            });  
+            
+            $('.area',this).height(highestBox);
+            
+        
+    });  
+	
+	}
+});
+
 })(jQuery);
+
+
