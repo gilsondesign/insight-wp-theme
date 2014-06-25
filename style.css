@@ -693,7 +693,8 @@ p + p {
   margin-right: 0;
 }
 #meet-our-team #partners div img {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 #meet-our-team #partners div h4 {
   padding-bottom: 0px;
