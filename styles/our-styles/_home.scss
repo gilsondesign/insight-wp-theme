@@ -124,6 +124,14 @@
 		.news {
 			@include span-columns(4);
             @include shift(1);
+			
+			.post-date {
+				display: block;
+				margin-bottom: 2px;
+				font-size: 12px;
+				color: palette(gray, lighter);
+				text-transform: uppercase;
+			}
 		}
 	}
 }

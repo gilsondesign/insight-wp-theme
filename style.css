@@ -653,6 +653,13 @@ p + p {
   .home .news:last-child {
     margin-right: 0;
   }
+  .home .news .post-date {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 12px;
+    color: #a8a8a8;
+    text-transform: uppercase;
+  }
 }
 
 #meet-our-team {

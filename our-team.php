@@ -85,7 +85,7 @@ Template Name: Our Team
                             <div class="bio-main">
                                 <h3 id="bestul">Jennifer Bestul, CPA</h3>
                                 <p>Jennifer is a 1985 graduate of Luther College, Decorah, IA, with a Bachelor of Arts degree, and a Major in Accounting. Since she began her career in 1985, she has specialized in investigative accounting. She has been a licensed CPA since 1987. Jennifer has worked on numerous assignments including business income, property damage, extra expense, worker’s comp, inventory, employee dishonesty, and measurement of lost wages. Jennifer has been deposed, participated in appraisals, testified in court and has lectured before insurance companies on several topics.</p>
-                                <a href="mailto:curt@insightforensics.com" class="btn">Contact Jennifer</a>
+                                <a href="mailto:jbestul@paacpas.com" class="btn">Contact Jennifer</a>
                             </div>
                         </li>
                         <li>
@@ -93,7 +93,7 @@ Template Name: Our Team
                             <div class="bio-main">
                                 <h3 id="friestedt">John D. Friestedt, CPA, CFF</h3>
                                 <p>John is a 1981 Cum Laude graduate of the University of Notre Dame. He also received an MBA in 1984 from the University of Texas at Austin. He is a licensed CPA in the states of Wisconsin and Illinois. Since 1986, John has focused his entire career on forensic accounting, including numerous assignments involving lost business income, third party income losses and employee dishonesty losses. John has been deposed a number of times and has testified in court.</p>
-                                <a href="mailto:curt@insightforensics.com" class="btn">Contact John</a>
+                                <a href="mailto:jfriestedt@paacpas.com" class="btn">Contact John</a>
                             </div>
                         </li>
                         <li>
@@ -101,7 +101,7 @@ Template Name: Our Team
                             <div class="bio-main">
                                 <h3 id="denson">Kathy M Denson, CPA, CFF, CFE</h3>
                                 <p>Kathy graduated from Northeastern Illinois University (with high honors) in 1983, with a bachelors degree in Business with an emphasis on accounting. She became a licensed CPA in Illinois in 1986 and in Colorado in 1989. Kathy’s experience includes 3 years performing financial statement audits,  but the majority of her career has been devoted to determining lost income of businesses and individuals, and providing expert testimony on financial damages.</p>
-                                <a href="mailto:curt@insightforensics.com" class="btn">Contact Kathy</a>
+                                <a href="mailto:kmdenson@paacpas.com" class="btn">Contact Kathy</a>
                             </div>
                         </li>
                         <li>
@@ -109,7 +109,7 @@ Template Name: Our Team
                             <div class="bio-main">
                                 <h3 id="knight">Terrence S. Knight, CPA, CFF</h3>
                                 <p>Terry graduated in 1983 from Marquette University, Milwaukee, WI, with a Bachelor of Science in Accounting.  Terry is a licensed CPA in Illinois and has focused his career exclusively on forensic accounting since 1991. He has been engaged in numerous assignments relating to employee dishonesty losses, business income losses, property damage, financial condition assessments, and disability income losses. Terry has been deposed and has testified in court and has presented seminars to members of the insurance industry and legal profession.</p>
-                                <a href="mailto:curt@insightforensics.com" class="btn">Contact Terrence</a>
+                                <a href="mailto:tknight@paacpas.com" class="btn">Contact Terrence</a>
                             </div>
                         </li>
 
