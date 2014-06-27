@@ -508,7 +508,7 @@ p + p {
 }
 .home-banner__text {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 100%;
   max-width: 768px;
@@ -528,24 +528,43 @@ p + p {
 }
 .home-banner__text h1 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
   text-transform: none;
+  padding-bottom: 0px;
+}
+.home-banner__text h1 span {
+  color: #fccf1a;
 }
 @media screen and (min-width: 768px) {
   .home-banner__text h1 {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
 @media screen and (min-width: 1025px) {
   .home-banner__text h1 {
-    font-size: 60px;
+    font-size: 55px;
+    letter-spacing: 1px;
   }
 }
 .home-banner__text p {
   font-size: 18px;
   line-height: 1.7;
   color: white;
+}
+.home-banner__text .change {
+  font-size: 22px;
+  line-height: 1.7;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.home-banner__text .change span {
+  background: white;
+  color: #003ca6;
+  padding: 4px 6px;
+  margin: 0px 4px;
+  text-shadow: none;
 }
 
 .home #news {
@@ -684,17 +703,17 @@ p + p {
 #meet-our-team {
   padding: 25px 0 40px 0;
 }
-#meet-our-team #partners {
+#meet-our-team #partners, #meet-our-team #staff {
   max-width: 1008px;
   margin-left: auto;
   margin-right: auto;
 }
-#meet-our-team #partners:after {
+#meet-our-team #partners:after, #meet-our-team #staff:after {
   content: "";
   display: table;
   clear: both;
 }
-#meet-our-team #partners div {
+#meet-our-team #partners div, #meet-our-team #staff div {
   max-width: 1008px;
   margin-left: auto;
   margin-right: auto;
@@ -703,59 +722,62 @@ p + p {
   margin-right: 2.35765%;
   width: 40.29137%;
 }
-#meet-our-team #partners div:after {
+#meet-our-team #partners div:after, #meet-our-team #staff div:after {
   content: "";
   display: table;
   clear: both;
 }
-#meet-our-team #partners div:last-child {
+#meet-our-team #partners div:last-child, #meet-our-team #staff div:last-child {
   margin-right: 0;
 }
-#meet-our-team #partners div img {
+#meet-our-team #partners div img, #meet-our-team #staff div img {
   margin-bottom: 10px;
   border-radius: 4px;
 }
-#meet-our-team #partners div h4 {
+#meet-our-team #partners div p, #meet-our-team #staff div p {
+  padding-bottom: 20px;
+}
+#meet-our-team #partners div h4, #meet-our-team #staff div h4 {
   padding-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
-  #meet-our-team #partners div {
+  #meet-our-team #partners div, #meet-our-team #staff div {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%;
   }
-  #meet-our-team #partners div:last-child {
+  #meet-our-team #partners div:last-child, #meet-our-team #staff div:last-child {
     margin-right: 0;
   }
-  #meet-our-team #partners div:nth-child(6n) {
+  #meet-our-team #partners div:nth-child(6n), #meet-our-team #staff div:nth-child(6n) {
     margin-right: 0;
   }
-  #meet-our-team #partners div:nth-child(6n+1) {
+  #meet-our-team #partners div:nth-child(6n+1), #meet-our-team #staff div:nth-child(6n+1) {
     clear: left;
   }
 }
 @media screen and (min-width: 1025px) {
-  #meet-our-team #partners div {
+  #meet-our-team #partners div, #meet-our-team #staff div {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 14.70196%;
   }
-  #meet-our-team #partners div:last-child {
+  #meet-our-team #partners div:last-child, #meet-our-team #staff div:last-child {
     margin-right: 0;
   }
-  #meet-our-team #partners div:nth-child(6n) {
+  #meet-our-team #partners div:nth-child(6n), #meet-our-team #staff div:nth-child(6n) {
     margin-right: 0;
   }
-  #meet-our-team #partners div:nth-child(6n+1) {
+  #meet-our-team #partners div:nth-child(6n+1), #meet-our-team #staff div:nth-child(6n+1) {
     clear: left;
   }
 }
 
 #about-us {
   padding: 40px 0;
-  background: lightgray;
+  background: #eaeaea;
 }
 #about-us .area {
   margin: 20px 0;

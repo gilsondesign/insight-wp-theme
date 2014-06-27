@@ -26,7 +26,7 @@
 			padding-bottom:0px;
 			
 			span {
-				color:palette(blue, lightest);
+				color:$yellow;
 			}
 			
 			@include media($tablet) {
@@ -187,6 +187,10 @@
 				margin-bottom:10px;
 				border-radius: 4px;
 			}
+			
+			p {
+				padding-bottom:20px;
+			}
 
 			h4 {
 				padding-bottom:0px;
@@ -203,11 +207,12 @@
 			}
 		}
 	}
+	
 }
 
 #about-us {
 	padding:40px 0;
-	background: darken($gray, 85%);
+	background: lighten($gray, 60%);
 
 	.area {
 		margin:20px 0;
