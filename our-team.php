@@ -70,7 +70,7 @@ Template Name: Our Team
 
             <article class="team-bios">
                 <div class="team-bios__group">
-                    <h2>Partners</h2>
+                    <h2>Meet Our Partners</h2>
                     <ul>
                         <li>
                             <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/reynolds.jpg" alt="Curt Reynolds CPA, CFF" />
@@ -117,7 +117,7 @@ Template Name: Our Team
                 </div>
 
                 <div class="team-bios__group" id="our-staff">
-                    <h2>Staff</h2>
+                    <h2>Meet Our Staff</h2>
                     <ul>
                         <li>
                             <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/conway.jpg" alt="Kelly M. Conway, CPA" />

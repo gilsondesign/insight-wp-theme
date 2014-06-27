@@ -10,8 +10,11 @@ Template Name: Home
 <div class="page-wrap page-wrap--home">
     <div class="home-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/forensic-accounting-test.jpg);">
         <div class="home-banner__text">
-            <h1>Forensic Accountants</h1>
-            <p>We help you discover the who, what, where and why. Insight offers top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
+        	<h1>We've <span>Changed</span> our Name</h1>
+            <p class="change">We are excited to announce that we changed the name of our firm from Peters & Associates to <span>INSIGHT Forensic Accountants.</span></p>
+            <p>Insight will help you discover the who, what, where and why. We offer top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
+            <!--<h1>Forensic Accountants</h1>
+            -->
         </div>
     </div>
 
@@ -72,9 +75,28 @@ Template Name: Home
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#knight">Terrence S. Knight</a></h4>
                         <p class="location">Chicago, IL</p>
                     </div>
+               </div>
+               <h2>Meet Our Staff</h2>
+               <div id="staff">
                     <div>
-                        <img src="<?php bloginfo('template_url'); ?>/img/spacer.png" alt="" />
-                        <a href="<?php bloginfo('url'); ?>/our-team/#our-staff" class="btn">Meet our Staff</a>
+                        <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/conway.jpg" alt="Kelly M. Conway, CPA" />
+                        <h4><a href="<?php bloginfo('url'); ?>/our-team/#conway">Kelly M. Conway</a></h4>
+                    </div>
+                    <div>
+                        <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/denton.jpg" alt="Lisa A. Denton" />
+                        <h4><a href="<?php bloginfo('url'); ?>/our-team/#denton">Lisa A. Denton</a></h4>
+                    </div>
+                    <div>
+                        <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/schultz.jpg" alt="Jessica M. Schultz, CPA" />
+                        <h4><a href="<?php bloginfo('url'); ?>/our-team/#schultz">Jessica M. Schultz</a></h4>
+                    </div>
+                    <div>
+                        <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/derose.jpg" alt="Ann F. DeRose, CPA" />
+                        <h4><a href="<?php bloginfo('url'); ?>/our-team/#derose">Ann F. DeRose</a></h4>
+                    </div>
+                    <div>
+                         <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/stone.jpg" alt="Sandra M. Stone, CFE" />
+                        <h4><a href="<?php bloginfo('url'); ?>/our-team/#stone">Sandra M. Stone</a></h4>
                     </div>
                </div>
             </div>
