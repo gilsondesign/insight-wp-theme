@@ -79,7 +79,8 @@
     <nav class="main-nav">
         <div class="container">
             <a class="main-nav__logo" href="<?php echo get_option('home'); ?>/">
-                <img src="<?php bloginfo('template_url'); ?>/img/insight-logo-white.png" alt="<?php bloginfo('name'); ?>" />
+                <img class="logo--small" src="<?php bloginfo('template_url'); ?>/img/insight-logo-white-mobile.png" alt="<?php bloginfo('name'); ?>" />
+                <img class="logo--large" src="<?php bloginfo('template_url'); ?>/img/insight-logo-white.png" alt="<?php bloginfo('name'); ?>" />
             </a>
             <a class="main-nav__menu-button js-toggle-nav" href="JavaScript:void(0);"><img src="<?php bloginfo('template_url'); ?>/img/mobile-menu-button.png" /></a>
 

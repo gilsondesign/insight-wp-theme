@@ -6,7 +6,7 @@
 
     &__text {
         position: absolute;
-        top: 60%;
+        top: 55%;
         left: 50%;
         width: 100%;
         max-width: 768px;
@@ -24,15 +24,15 @@
             color: $white;
             text-transform: none;
 			padding-bottom:0px;
-			
+
 			span {
 				color:$yellow;
 			}
-			
+
 			@include media($tablet) {
 				font-size: 55px;
 			}
-			
+
 			@include media($desktop) {
 				font-size: 55px;
 				letter-spacing:1px;
@@ -44,14 +44,14 @@
             line-height: 1.7;
             color: $white;
         }
-		
+
 		.change {
             font-size: 22px;
             line-height: 1.7;
             color: $white;
 			font-weight:bold;
 			padding-bottom:10px;
-			
+
 			span {
 				background:$white;
 				color:$blue;
@@ -100,11 +100,11 @@
 			padding-top:0px;
 			@include span-columns(4);
             @include shift(1);
-			
-			
+
+
 		}
 	}
-	
+
     #inspirational-quote {
 		text-align: center;
 
@@ -170,7 +170,7 @@
 		}
 	}
 
-	
+
 }
 
 #meet-our-team {
@@ -187,7 +187,7 @@
 				margin-bottom:10px;
 				border-radius: 4px;
 			}
-			
+
 			p {
 				padding-bottom:20px;
 			}
@@ -195,7 +195,7 @@
 			h4 {
 				padding-bottom:0px;
 			}
-			
+
 			@include media($tablet) {
 				@include span-columns(2);
 				@include omega(6n);
@@ -207,7 +207,7 @@
 			}
 		}
 	}
-	
+
 }
 
 #about-us {
@@ -235,7 +235,7 @@
 		p {
 			font-size:14px;
 		}
-		
+
 		@include media($tablet) {
 			@include span-columns(4);
 		}
@@ -247,7 +247,7 @@
 
 #contact-section {
 	padding:40px 0;
-	
+
 	#our-locations {
 		padding-top:20px;
 		.location {
@@ -262,7 +262,7 @@
 				}
 		}
 	}
-	
+
 	@include media($tablet) {
 		#contact-us {
 			@include span-columns(6);
@@ -280,7 +280,7 @@
 			}
 		}
 	}
-	
+
 
 	@include media($desktop) {
 		#contact-us {
