@@ -11,7 +11,7 @@ Template Name: Our Team
     <div class="section-wrap">
         <div class="container">
             <h1>Our team</h1>
-            <p class="subhead">Since 1996, Peters & Associates has provided forensic and investigative accounting services to over 150 insurance companies and law firms. Each partner brings more than 20 years of forensic accounting experience, resulting in unmatched knowledge, expertise and first-hand experience.</p>
+            <p class="subhead">Since 1996, Insight has provided forensic and investigative accounting services to over 150 insurance companies and law firms. Each partner brings more than 20 years of forensic accounting experience, resulting in unmatched knowledge, expertise and first-hand experience.</p>
 
             <aside class="aside">
                 <div class="aside__module">
@@ -123,7 +123,7 @@ Template Name: Our Team
                             <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/conway.jpg" alt="Kelly M. Conway, CPA" />
                             <div class="bio-main">
                                 <h3 id="conway">Kelly M. Conway, CPA</h3>
-                                <p>Kelly has a BS from Northern Michigan University.  She is a CPA and has been with Peters & Associates since 2003.  She had prior work experience as a bookkeeper for a construction firm and with a tax/write-up accounting firm.  At Peters & Associates, Kelly specializes in 1st party property, and lost income analysis. </p>
+                                <p>Kelly has a BS from Northern Michigan University.  She is a CPA and has been with Peters & Associates since 2003.  She had prior work experience as a bookkeeper for a construction firm and with a tax/write-up accounting firm.  At Insight, Kelly specializes in 1st party property, and lost income analysis. </p>
                                 <a href="mailto:kconway@paacpas.com" class="btn">Contact Kelly</a>
                             </div>
                         </li>
@@ -131,7 +131,7 @@ Template Name: Our Team
                         	<img src="<?php bloginfo('template_url'); ?>/img/staff-photos/denton.jpg" alt="Lisa A. Denton" />
                             <div class="bio-main">
                                 <h3 id="denton">Lisa A. Denton</h3>
-                                <p>Lisa has two BS degrees from Ferris State University.  She has been with Peters & Associates since 1999.  She had prior work experience with a tax/write up accounting firm and as a bookkeeper for a radiographic firm.  At Peters & Associates she is our Firm Administrator, handling all of our internal accounting/bookkeeping.  She also works on business income losses and provides research assistance.</p>
+                                <p>Lisa has two BS degrees from Ferris State University.  She has been with Peters & Associates since 1999.  She had prior work experience with a tax/write up accounting firm and as a bookkeeper for a radiographic firm.  At Insight she is our Firm Administrator, handling all of our internal accounting/bookkeeping.  She also works on business income losses and provides research assistance.</p>
                                 <a href="mailto:ldenton@paacpas.com" class="btn">Contact Lisa</a>
                             </div>
                         </li>
@@ -139,7 +139,7 @@ Template Name: Our Team
                             <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/schultz.jpg" alt="Jessica M. Schultz, CPA" />
                             <div class="bio-main">
                                 <h3 id="schultz">Jessica M. Schultz, CPA</h3>
-                                <p>Jessie has a BS from Marquette University.  She is a CPA and has been with Peters & Associates since 1997.  She had prior work experience as an administrator in a title company.  At Peters & Associates, Jessica works on damage assessment for a wide array of insurance and litigated matters. </p>
+                                <p>Jessie has a BS from Marquette University.  She is a CPA and has been with Peters & Associates since 1997.  She had prior work experience as an administrator in a title company.  At Insight, Jessica works on damage assessment for a wide array of insurance and litigated matters. </p>
                                 <a href="mailto:jschultz@paacpas.com" class="btn">Contact Jessica</a>
                             </div>
                         </li>
@@ -147,7 +147,7 @@ Template Name: Our Team
                             <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/derose.jpg" alt="Ann F. DeRose, CPA" />
                             <div class="bio-main">
                                 <h3 id="derose">Ann F. DeRose, CPA</h3>
-                                <p>Ann has a BBA from the University of Wisconsin-Eau Claire.  She is a CPA and has been with Peters & Associates since 2000.  She had prior work experience as a bank manager and with a tax/write-up accounting firm.  At Peters & Associates she specializes in the evaluation of lost income matters arising from personal injury, insured events, and torts.  Ann has provided expert witness testimony on behalf of clients.</p>
+                                <p>Ann has a BBA from the University of Wisconsin-Eau Claire.  She is a CPA and has been with Peters & Associates since 2000.  She had prior work experience as a bank manager and with a tax/write-up accounting firm.  At Insight she specializes in the evaluation of lost income matters arising from personal injury, insured events, and torts.  Ann has provided expert witness testimony on behalf of clients.</p>
                                 <a href="mailto:aderose@paacpas.com" class="btn">Contact Ann</a>
                             </div>
                         </li>
