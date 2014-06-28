@@ -72,6 +72,10 @@
 
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
+    <script type="text/javascript">
+        var base_url = '<?php bloginfo('url'); ?>';
+    </script>
+
     <?php wp_head(); ?>
 </head>
 

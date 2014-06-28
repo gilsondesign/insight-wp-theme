@@ -791,6 +791,7 @@ p + p {
   background: #eaeaea;
 }
 #about-us .area {
+  height: 316px;
   margin: 20px 0;
   padding: 20px;
   background: #7f9dd2;

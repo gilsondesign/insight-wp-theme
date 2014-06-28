@@ -10354,7 +10354,7 @@ return jQuery;
  */
 
 !function(a){a&&(a.fn.headroom=function(b){return this.each(function(){var c=a(this),d=c.data("headroom"),e="object"==typeof b&&b;e=a.extend(!0,{},Headroom.options,e),d||(d=new Headroom(this,e),d.init(),c.data("headroom",d)),"string"==typeof b&&d[b]()})},a("[data-headroom]").each(function(){var b=a(this);b.headroom(b.data())}))}(window.Zepto||window.jQuery);;// This wrapper function allows us to use the '$' for jQuery functions
-(function($) {
+(function ($) {
 
 $(function () {
     $(".js-toggle-nav").click(function () {
@@ -10370,25 +10370,31 @@ $(function () {
     }
 });
 
+
 // Not sure if we need this since Resources might be a different page
-//$(function () {
-//    $("a[href*=#]:not([href=#])").click(function () {
-//        var e = this.hash;
-//        setTimeout(function () {
-//            window.location.hash = e
-//        }, 1e3);
-//        if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
-//            var t = $(this.hash);
-//            t = t.length ? t : $("[name=" + this.hash.slice(1) + "]");
-//            if (t.length) {
-//                $("html,body").animate({
-//                    scrollTop: t.offset().top
-//                }, 1e3);
-//                return false
-//            }
-//        }
-//    })
-//});
+$(function () {
+    $("a[href*=#]:not([href=#])").click(function () {
+        var e = this.hash;
+        setTimeout(function () {
+            window.location.hash = e
+        }, 1e3);
+        if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+            var t = $(this.hash);
+            t = t.length ? t : $("[name=" + this.hash.slice(1) + "]");
+            if (t.length) {
+                $("html,body").animate({
+                    scrollTop: t.offset().top
+                }, 1e3);
+                return false
+            }
+        }
+    })
+});
+
+
+
+
+
 
 // This should just be for the Homepage
 $('.home .main-nav').headroom({
@@ -10408,26 +10414,26 @@ $('.single .main-nav, .page .main-nav').headroom({
     },
 });
 
-$(window).load(function() {
-	var pageWidth = $(window).width();
-	if (pageWidth > 767) {
-	
-	$('.container').each(function(){  
-            
-            var highestBox = 0;
-            $('.area', this).each(function(){
-            
-                if($(this).height() > highestBox) 
-                   highestBox = $(this).height(); 
-            });  
-            
-            $('.area',this).height(highestBox);
-            
-        
-    });  
-	
-	}
-});
+
+
+// This isn't necessary slows down the initial page load pretty hard and is janky. It also doesn't work as intended.
+//$(window).load(function() {
+//	var pageWidth = $(window).width();
+//	if (pageWidth > 767) {
+//
+//	$('.container').each(function(){
+//        var highestBox = 0;
+//        $('.area', this).each(function(){
+//
+//            if($(this).height() > highestBox)
+//               highestBox = $(this).height();
+//        });
+//
+//        $('.area',this).height(highestBox);
+//    });
+//
+//	}
+//});
 
 })(jQuery);
 

@@ -215,11 +215,12 @@
 	background: lighten($gray, 60%);
 
 	.area {
-		margin:20px 0;
-		padding:20px;
-		background:palette(blue, lighter);
-		border-radius:4px;
-		color:$white;
+        height: 316px;
+		margin: 20px 0;
+		padding: 20px;
+		background: palette(blue, lighter);
+		border-radius: 4px;
+		color: $white;
 
 		h4 {
 			margin:0 0 6px 0;
