@@ -169,7 +169,7 @@ Template Name: Home
             <div id="contact-us">
                 <h3>Contact Us</h3>
                 <p></p>
-                <?php echo do_shortcode ('[contact-form-7 id="11" title="Contact form"]'); ?>
+                <?php echo do_shortcode ('[contact-form-7 id="13" title="Contact form"]'); ?>
             </div>
             <div id="our-locations">
                 <h3>Our Office Locations</h3>
