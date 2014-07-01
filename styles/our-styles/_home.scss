@@ -70,6 +70,15 @@
 }
 
 #news {
+    
+    li { 
+        margin-top: 0px;
+    }
+    
+    li+li {
+        margin-top: 10px;
+    }
+    
 	padding-top:20px;
 	.post-date {
 		display: block;

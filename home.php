@@ -81,22 +81,27 @@ Template Name: Home
                     <div>
                         <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/conway.jpg" alt="Kelly M. Conway, CPA" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#conway">Kelly M. Conway</a></h4>
+                        <p class="location">Milwaukee, WI</p>
                     </div>
                     <div>
                         <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/denton.jpg" alt="Lisa A. Denton" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#denton">Lisa A. Denton</a></h4>
+                        <p class="location">Denver, CO</p>
                     </div>
                     <div>
                         <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/schultz.jpg" alt="Jessica M. Schultz, CPA" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#schultz">Jessica M. Schultz</a></h4>
+                        <p class="location">Milwaukee, WI</p>
                     </div>
                     <div>
                         <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/derose.jpg" alt="Ann F. DeRose, CPA" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#derose">Ann F. DeRose</a></h4>
+                        <p class="location">Milwaukee, WI</p>
                     </div>
                     <div>
                          <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/stone.jpg" alt="Sandra M. Stone, CFE" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#stone">Sandra M. Stone</a></h4>
+                        <p class="location">Bethel Park, PA</p>
                     </div>
                </div>
             </div>

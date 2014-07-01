@@ -581,6 +581,12 @@ p + p {
 #news {
   padding-top: 20px;
 }
+#news li {
+  margin-top: 0px;
+}
+#news li + li {
+  margin-top: 10px;
+}
 #news .post-date {
   display: block;
   margin-bottom: 2px;
