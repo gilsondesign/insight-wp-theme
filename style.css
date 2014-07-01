@@ -517,12 +517,26 @@ p + p {
   background: no-repeat center center fixed;
   background-size: cover;
 }
+.home-banner__palogo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: white;
+  text-align: center;
+  padding-top: 50px;
+  border-radius: 200px;
+  width: 175px;
+  height: 175px;
+}
+.home-banner__palogo img {
+  max-width: 125px;
+}
 .home-banner__text {
   position: absolute;
   top: 55%;
   left: 50%;
   width: 100%;
-  max-width: 768px;
+  max-width: 1024px;
   padding: 0 15px;
   text-shadow: 2px 2px 0 black;
   -webkit-transform: translate(-50%, -50%);
@@ -542,19 +556,20 @@ p + p {
   font-weight: 400;
   color: white;
   text-transform: none;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
+  margin-left: 220px;
 }
 .home-banner__text h1 span {
   color: #fccf1a;
 }
 @media screen and (min-width: 768px) {
   .home-banner__text h1 {
-    font-size: 55px;
+    font-size: 43px;
   }
 }
 @media screen and (min-width: 1025px) {
   .home-banner__text h1 {
-    font-size: 55px;
+    font-size: 43px;
     letter-spacing: 1px;
   }
 }
@@ -562,6 +577,7 @@ p + p {
   font-size: 18px;
   line-height: 1.7;
   color: white;
+  margin-left: 220px;
 }
 .home-banner__text .change {
   font-size: 22px;

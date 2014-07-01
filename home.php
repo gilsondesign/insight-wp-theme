@@ -9,7 +9,11 @@ Template Name: Home
 
 <div class="page-wrap page-wrap--home">
     <div class="home-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/forensic-accounting-test.jpg);">
+        
         <div class="home-banner__text">
+            <div class="home-banner__palogo">
+                <img src="<?php bloginfo('template_url'); ?>/img/peters-logo.png" alt="Curtis J. Reynolds" />
+            </div>
         	<h1>We've <span>Changed</span> our Name</h1>
             <p class="change">We are excited to announce that we changed the name of our firm from Peters & Associates to <span>INSIGHT Forensic Accountants.</span></p>
             <p>Insight will help you discover the who, what, where and why. We offer top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
@@ -99,7 +103,7 @@ Template Name: Home
                         <p class="location">Milwaukee, WI</p>
                     </div>
                     <div>
-                         <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/stone.jpg" alt="Sandra M. Stone, CFE" />
+                        <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/stone.jpg" alt="Sandra M. Stone, CFE" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#stone">Sandra M. Stone</a></h4>
                         <p class="location">Bethel Park, PA</p>
                     </div>
