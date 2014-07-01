@@ -578,48 +578,51 @@ p + p {
   text-shadow: none;
 }
 
-.home #news {
+#news {
   padding-top: 20px;
 }
-.home #news .post-date {
+#news .post-date {
   display: block;
   margin-bottom: 2px;
   font-size: 12px;
   color: #a8a8a8;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: 768px) {
-  .home #welcome {
+  #welcome {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
   }
-  .home #welcome:last-child {
+  #welcome:last-child {
     margin-right: 0;
   }
-  .home #news {
+
+  #news {
     padding-top: 0px;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
   }
-  .home #news:last-child {
+  #news:last-child {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 1025px) {
-  .home #welcome {
+  #welcome {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 57.35098%;
   }
-  .home #welcome:last-child {
+  #welcome:last-child {
     margin-right: 0;
   }
-  .home #news {
+
+  #news {
     padding-top: 0px;
     float: left;
     display: block;
@@ -627,35 +630,35 @@ p + p {
     width: 31.76157%;
     margin-left: 8.5298%;
   }
-  .home #news:last-child {
+  #news:last-child {
     margin-right: 0;
   }
 }
-.home #inspirational-quote {
+#inspirational-quote {
   text-align: center;
 }
-.home #inspirational-quote #quote-flourish {
+#inspirational-quote #quote-flourish {
   padding-bottom: 10px;
   max-width: 1008px;
   margin-left: auto;
   margin-right: auto;
 }
-.home #inspirational-quote #quote-flourish:after {
+#inspirational-quote #quote-flourish:after {
   content: "";
   display: table;
   clear: both;
 }
-.home #inspirational-quote #quote-flourish #quote-hr-left {
+#inspirational-quote #quote-flourish #quote-hr-left {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
   padding-left: 15%;
 }
-.home #inspirational-quote #quote-flourish #quote-hr-left:last-child {
+#inspirational-quote #quote-flourish #quote-hr-left:last-child {
   margin-right: 0;
 }
-.home #inspirational-quote #quote-flourish #quote-hr-right {
+#inspirational-quote #quote-flourish #quote-hr-right {
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -663,10 +666,10 @@ p + p {
   margin-right: 0;
   padding-right: 15%;
 }
-.home #inspirational-quote #quote-flourish #quote-hr-right:last-child {
+#inspirational-quote #quote-flourish #quote-hr-right:last-child {
   margin-right: 0;
 }
-.home #inspirational-quote #quote-flourish hr {
+#inspirational-quote #quote-flourish hr {
   color: #a8a8a8;
   background-color: #a8a8a8;
   height: 1px;
@@ -674,16 +677,16 @@ p + p {
   clear: both;
   margin-top: 20px;
 }
-.home #inspirational-quote #quote-flourish #quote-img {
+#inspirational-quote #quote-flourish #quote-img {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 14.70196%;
 }
-.home #inspirational-quote #quote-flourish #quote-img:last-child {
+#inspirational-quote #quote-flourish #quote-img:last-child {
   margin-right: 0;
 }
-.home #inspirational-quote #quote-flourish #quote-img span {
+#inspirational-quote #quote-flourish #quote-img span {
   background: #003ca6;
   border-radius: 50%;
   font-size: 26px;
@@ -692,18 +695,18 @@ p + p {
   width: 45px;
   height: 45px;
 }
-.home #inspirational-quote #quote-flourish #quote-img span p {
+#inspirational-quote #quote-flourish #quote-img span p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 55px;
   line-height: 1.32;
 }
-.home #inspirational-quote #quote {
+#inspirational-quote #quote {
   font-weight: 300;
   font-size: 32px;
   color: #003ca6;
   display: block;
 }
-.home #inspirational-quote #author {
+#inspirational-quote #author {
   font-weight: 300;
   color: #515151;
   font-size: 16px;

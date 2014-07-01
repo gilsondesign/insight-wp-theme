@@ -27,11 +27,9 @@ Template Name: Resources
             <div id="recent-news">
                 <h1>In the News</h1>
                 <div id="posts-list">
-                   <?php query_posts( array( 'paged' => get_query_var('paged') ) ); ?>
+                <?php query_posts( array( 'orderby' => 'date', 'order' => 'DESC' ) ); ?>
                     <?php while (have_posts()) : the_post(); ?>
-
-                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-                            <?php the_post_thumbnail('post-thumbnail', array('class' => 'news-thumb')); ?>
+                        <?php the_post_thumbnail('post-thumbnail', array('class' => 'news-thumb')); ?>
                             <div class="news-content">
 
                                 <a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><h4><?php the_title(); ?></h4></a>
@@ -39,9 +37,8 @@ Template Name: Resources
                                 <span><?php the_excerpt(); ?></span>
                                 <hr />
                             </div>
-                        </article>
-					
                     <?php endwhile;?>
+                    
                     <?php wp_pagenavi(); ?>
                    
                     

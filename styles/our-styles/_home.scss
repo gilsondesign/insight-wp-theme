@@ -69,105 +69,103 @@
     }
 }
 
-.home {
+#news {
+	padding-top:20px;
+	.post-date {
+		display: block;
+		margin-bottom: 2px;
+		font-size: 12px;
+		color: palette(gray, lighter);
+		text-transform: uppercase;
+	}
+}
+@include media($tablet) {
+	#welcome {
+		@include span-columns(8);
+	}
+
 	#news {
-		padding-top:20px;
-		.post-date {
-			display: block;
-			margin-bottom: 2px;
-			font-size: 12px;
-			color: palette(gray, lighter);
-			text-transform: uppercase;
-		}
+		padding-top:0px;
+		@include span-columns(4);
 	}
-	@include media($tablet) {
-		#welcome {
-			@include span-columns(8);
-		}
+}
 
-		#news {
-			padding-top:0px;
-			@include span-columns(4);
-		}
+@include media($desktop) {
+	#welcome {
+		@include span-columns(7);
 	}
 
-	@include media($desktop) {
-		#welcome {
-			@include span-columns(7);
-		}
-
-		#news {
-			padding-top:0px;
-			@include span-columns(4);
-            @include shift(1);
+	#news {
+		padding-top:0px;
+		@include span-columns(4);
+		@include shift(1);
 
 
-		}
 	}
+}
 
-    #inspirational-quote {
-		text-align: center;
+#inspirational-quote {
+	text-align: center;
 
-		#quote-flourish {
-			padding-bottom:10px;
-			@include outer-container();
+	#quote-flourish {
+		padding-bottom:10px;
+		@include outer-container();
 
-			#quote-hr-left {
-				@include span-columns(5);
-				padding-left:15%;
+		#quote-hr-left {
+			@include span-columns(5);
+			padding-left:15%;
 
-			}
+		}
 
-			#quote-hr-right {
-				@include span-columns(5);
-				@include omega();
-				padding-right:15%;
-			}
+		#quote-hr-right {
+			@include span-columns(5);
+			@include omega();
+			padding-right:15%;
+		}
 
-			hr {
-				color:palette(gray, lighter);
-				background-color:palette(gray, lighter);
-				height: 1px;
-				border: 0px;
-				clear: both;
-				margin-top:20px;
-			}
+		hr {
+			color:palette(gray, lighter);
+			background-color:palette(gray, lighter);
+			height: 1px;
+			border: 0px;
+			clear: both;
+			margin-top:20px;
+		}
 
-			#quote-img {
-				@include span-columns(2);
+		#quote-img {
+			@include span-columns(2);
 
-				span {
-					background:$blue;
-					border-radius:50%;
-					font-size:$font-large;
-					color:$white;
-					display:inline-block;
-					width:45px;
-					height:45px;
+			span {
+				background:$blue;
+				border-radius:50%;
+				font-size:$font-large;
+				color:$white;
+				display:inline-block;
+				width:45px;
+				height:45px;
 
-					p {
-						font-family:Georgia, "Times New Roman", Times, serif;
-						font-size: 55px;
-						line-height: 1.32;
+				p {
+					font-family:Georgia, "Times New Roman", Times, serif;
+					font-size: 55px;
+					line-height: 1.32;
 
-					}
 				}
 			}
 		}
-		#quote {
-			font-weight:300;
-			font-size:$font-xlarge;
-			color:palette(blue);
-			display:block;
-		}
+	}
+	#quote {
+		font-weight:300;
+		font-size:$font-xlarge;
+		color:palette(blue);
+		display:block;
+	}
 
-		#author {
-			font-weight: 300;
-			color: palette(gray);
-			font-size: $baseFontSize;
-			padding-top: 15px;
-			display: block;
-		}
+	#author {
+		font-weight: 300;
+		color: palette(gray);
+		font-size: $baseFontSize;
+		padding-top: 15px;
+		display: block;
 	}
 
 
