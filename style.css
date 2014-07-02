@@ -766,6 +766,12 @@ p + p {
 #meet-our-team #partners div:last-child, #meet-our-team #staff div:last-child {
   margin-right: 0;
 }
+#meet-our-team #partners div:nth-child(2n), #meet-our-team #staff div:nth-child(2n) {
+  margin-right: 0;
+}
+#meet-our-team #partners div:nth-child(2n+1), #meet-our-team #staff div:nth-child(2n+1) {
+  clear: left;
+}
 #meet-our-team #partners div img, #meet-our-team #staff div img {
   margin-bottom: 10px;
   border-radius: 4px;

@@ -205,6 +205,7 @@
 		div {
 			@include outer-container();
 			@include span-columns(5);
+			@include omega(2n);
 
 			img {
 				margin-bottom:10px;
