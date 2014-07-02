@@ -1,13 +1,20 @@
 .home-banner {
     position: relative;
-    height: 500px;
     background: no-repeat center center fixed;
     background-size: cover;
+	padding-bottom:30px;
+	
+	@include media($tablet) {
+		height: 500px;
+		padding:0px;
+	}
+	
+	@include media($desktop) {
+		height: 500px;
+		padding:0px;
+	}
 
     &__palogo {
-        position: absolute;
-        top: 0%;
-        left: 0%;
         background-color: $white;
         text-align: center;
         padding-top: 50px;
@@ -16,21 +23,49 @@
         height: 175px;
         
         img { max-width: 125px;}
+		
+		@include media($tablet) {
+			position: absolute;
+			top: 0%;
+			left: 0%;
+		}
+		
+		@include media($desktop) {
+			position: absolute;
+			top: 0%;
+			left: 0%;
+		}
     }
     
     &__text {
-        position: absolute;
-        top: 55%;
-        left: 50%;
         width: 100%;
         max-width: 1024px;
         padding: 0 15px;
         text-shadow: 2px 2px 0 $black;
 
         @include media($tablet) {
+			position: absolute;
+        	top: 55%;
+        	left: 50%;
             width: 75%;
             padding: 0;
+			-webkit-transform: translate(-50%,-50%);
+			-moz-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
         }
+		
+		@include media($desktop) {
+			position: absolute;
+			top: 55%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			-moz-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+		}
 
         h1 {
             font-size: 40px;
@@ -38,7 +73,6 @@
             color: $white;
             text-transform: none;
 			padding-bottom:10px;
-            margin-left: 220px;
 
 			span {
 				color:$yellow;
@@ -46,11 +80,13 @@
 
 			@include media($tablet) {
 				font-size: 43px;
+				margin-left: 220px;
 			}
 
 			@include media($desktop) {
 				font-size: 43px;
 				letter-spacing:1px;
+				margin-left: 220px;
 			}
         }
 
@@ -58,7 +94,14 @@
             font-size: 18px;
             line-height: 1.7;
             color: $white;
-            margin-left: 220px;
+			
+			@include media($tablet) {
+            	margin-left: 220px;
+			}
+			
+			@include media($desktop) {
+            	margin-left: 220px;
+			}
         }
 
 		.change {
@@ -77,11 +120,7 @@
 			}
         }
 
-        -webkit-transform: translate(-50%,-50%);
-        -moz-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        -o-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
+        
     }
 }
 
@@ -206,6 +245,7 @@
 			@include outer-container();
 			@include span-columns(5);
 			@include omega(2n);
+			
 
 			img {
 				margin-bottom:10px;
@@ -221,11 +261,14 @@
 			}
 
 			@include media($tablet) {
+				@include omega-reset(2n);
 				@include span-columns(2);
 				@include omega(6n);
+				
 			}
 
 			@include media($desktop) {
+				@include omega-reset(2n);
 				@include span-columns(2);
 				@include omega(6n);
 			}
