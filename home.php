@@ -105,7 +105,7 @@ Template Name: Home
                     <div>
                         <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/stone.jpg" alt="Sandra M. Stone, CFE" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#stone">Sandra M. Stone</a></h4>
-                        <p class="location">Pittsburg, PA</p>
+                        <p class="location">Pittsburgh, PA</p>
                     </div>
                </div>
             </div>
