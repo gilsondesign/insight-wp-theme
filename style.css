@@ -472,6 +472,9 @@ p + p {
 #our-team .team-bios .btn {
   margin-top: 15px;
 }
+#our-team .team-bios a + a {
+  margin-left: 10px;
+}
 #our-team .team-bios img {
   width: 150px;
   float: left;
