@@ -177,8 +177,8 @@ Template Name: Home
         <div class="container">
             <div id="contact-us">
                 <h3>Contact Us</h3>
-                <p></p>
-                <?php echo do_shortcode ('[contact-form-7 id="13" title="Contact form"]'); ?>
+                <p>We want to hear from you! Send us an email by clicking the button below and we will respond as quickly as possible. Please include a description of your request so we can get you the appropriate help.</p>
+				<a href="mailto:admin@insightforensic.com?subject=Information request from InsightForensic.com" class="btn">Send us an email</a>
             </div>
             <div id="our-locations">
                 <h3>Our Office Locations</h3>

@@ -927,11 +927,14 @@ p + p {
 #contact-section {
   padding: 40px 0;
 }
+#contact-section .btn {
+  margin-top: 25px;
+}
 #contact-section #our-locations {
   padding-top: 20px;
 }
 #contact-section #our-locations .location {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 #contact-section #our-locations .location p + p {
   margin-top: 0px;
@@ -991,6 +994,7 @@ p + p {
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
+    padding-right: 50px;
   }
   #contact-section #contact-us:last-child {
     margin-right: 0;

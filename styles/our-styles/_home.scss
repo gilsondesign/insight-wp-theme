@@ -315,11 +315,13 @@
 
 #contact-section {
 	padding:40px 0;
+    
+    .btn {margin-top: 25px;}
 
 	#our-locations {
 		padding-top:20px;
 		.location {
-			padding-bottom:15px;
+			padding-bottom:30px;
 
 				p + p {
 					margin-top:0px;
@@ -353,6 +355,7 @@
 	@include media($desktop) {
 		#contact-us {
 			@include span-columns(6);
+            padding-right: 50px;
 		}
 
 		#our-locations {
