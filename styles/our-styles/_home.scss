@@ -5,7 +5,7 @@
 	padding-bottom:30px;
 	
 	@include media($tablet) {
-		height: 500px;
+		height: 300px;
 		padding:0px;
 	}
 	
@@ -14,29 +14,7 @@
 		padding:0px;
 	}
 
-    &__palogo {
-        background-color: $white;
-        text-align: center;
-        padding-top: 50px;
-        border-radius: 200px;
-        width: 175px;
-        height: 175px;
-        
-        img { max-width: 125px;}
-		
-		@include media($tablet) {
-			position: absolute;
-			top: 0%;
-			left: 0%;
-		}
-		
-		@include media($desktop) {
-			position: absolute;
-			top: 0%;
-			left: 0%;
-		}
-    }
-    
+     
     &__text {
         width: 100%;
         max-width: 1024px;
@@ -67,60 +45,27 @@
 			transform: translate(-50%,-50%);
 		}
 
-        h1 {
-            font-size: 40px;
-            font-weight: 400;
-            color: $white;
-            text-transform: none;
-			padding-bottom:10px;
-
-			span {
-				color:$yellow;
-			}
-
-			@include media($tablet) {
-				font-size: 43px;
-				margin-left: 220px;
-			}
-
-			@include media($desktop) {
-				font-size: 43px;
-				letter-spacing:1px;
-				margin-left: 220px;
-			}
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: $white;
-			
-			@include media($tablet) {
-            	margin-left: 220px;
-			}
-			
-			@include media($desktop) {
-            	margin-left: 220px;
-			}
-        }
-
-		.change {
-            font-size: 22px;
-            line-height: 1.7;
-            color: $white;
-			font-weight:bold;
-			padding-bottom:10px;
-
-			span {
-				background:$white;
-				color:$blue;
-				padding:4px 6px;
-				margin:0px 4px;
-				text-shadow:none;
-			}
-        }
-
         
+        p {
+            font-weight: 300;
+            line-height: 1.7;
+            color: $white;
+            text-align: center;
+            display: none;
+			
+			@include media($phone) {
+            	font-size: 20px;
+			}
+            
+            @include media($tablet) {
+            	font-size: 20px;
+                display: block;
+			}
+			
+			@include media($desktop) {
+            	font-size: 32px;
+			}
+        }        
     }
 }
 

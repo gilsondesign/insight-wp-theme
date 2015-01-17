@@ -75,7 +75,7 @@ table {
 html {
   height: 100%;
   color: #bada55;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 100%;
@@ -84,7 +84,7 @@ html {
 
 body {
   height: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #515151;
   overflow-x: hidden;
 }
@@ -522,7 +522,7 @@ p + p {
 }
 @media screen and (min-width: 768px) {
   .home-banner {
-    height: 500px;
+    height: 300px;
     padding: 0px;
   }
 }
@@ -530,31 +530,6 @@ p + p {
   .home-banner {
     height: 500px;
     padding: 0px;
-  }
-}
-.home-banner__palogo {
-  background-color: white;
-  text-align: center;
-  padding-top: 50px;
-  border-radius: 200px;
-  width: 175px;
-  height: 175px;
-}
-.home-banner__palogo img {
-  max-width: 125px;
-}
-@media screen and (min-width: 768px) {
-  .home-banner__palogo {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .home-banner__palogo {
-    position: absolute;
-    top: 0%;
-    left: 0%;
   }
 }
 .home-banner__text {
@@ -589,57 +564,28 @@ p + p {
     transform: translate(-50%, -50%);
   }
 }
-.home-banner__text h1 {
-  font-size: 40px;
-  font-weight: 400;
-  color: white;
-  text-transform: none;
-  padding-bottom: 10px;
-}
-.home-banner__text h1 span {
-  color: #fccf1a;
-}
-@media screen and (min-width: 768px) {
-  .home-banner__text h1 {
-    font-size: 43px;
-    margin-left: 220px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .home-banner__text h1 {
-    font-size: 43px;
-    letter-spacing: 1px;
-    margin-left: 220px;
-  }
-}
 .home-banner__text p {
-  font-size: 18px;
+  font-weight: 300;
   line-height: 1.7;
   color: white;
+  text-align: center;
+  display: none;
+}
+@media screen and (min-width: 400px) {
+  .home-banner__text p {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .home-banner__text p {
-    margin-left: 220px;
+    font-size: 20px;
+    display: block;
   }
 }
 @media screen and (min-width: 1025px) {
   .home-banner__text p {
-    margin-left: 220px;
+    font-size: 32px;
   }
-}
-.home-banner__text .change {
-  font-size: 22px;
-  line-height: 1.7;
-  color: white;
-  font-weight: bold;
-  padding-bottom: 10px;
-}
-.home-banner__text .change span {
-  background: white;
-  color: #003ca6;
-  padding: 4px 6px;
-  margin: 0px 4px;
-  text-shadow: none;
 }
 
 #news {

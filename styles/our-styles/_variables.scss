@@ -6,6 +6,7 @@ $gutter:	1.523em;
 $grid-columns:	12;
 $max-width:	1008px;
 
+$phone: new-breakpoint(min-width 400px);
 $tablet: new-breakpoint(min-width 768px);
 $desktop: new-breakpoint(min-width 1025px);
 
@@ -55,7 +56,9 @@ $palettes: (
 // Typography
 //////////////////////////////////////////
 
-$sansFontFamily:                'Roboto', sans-serif                !default;
+
+
+$sansFontFamily:                'Open Sans', sans-serif             !default;
 $serifFontFamily:               'Volkhov', Georgia, serif           !default;
 
 $baseFontSize:                  16px                                !default;
