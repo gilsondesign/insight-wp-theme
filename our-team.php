@@ -33,10 +33,12 @@ Template Name: Our Team
                             <a href="#denson">Kathy M. Denson</a>
                             <p class="location">Denver, CO</p>
                         </li>
+						<!--
                         <li>
                             <a href="#knight">Terrence S. Knight</a>
                             <p class="location">Chicago, IL</p>
                         </li>
+						-->
 
                     </ul>
                 </div>
@@ -60,10 +62,12 @@ Template Name: Our Team
                             <a href="#derose">Ann F. DeRose</a>
                             <p class="location">Milwaukee, WI</p>
                         </li>
+						<!--
                         <li>
                             <a href="#stone">Sandra M. Stone</a>
                             <p class="location">Pittsburgh, PA</p>
                         </li>
+						-->
                     </ul>
                 </div>
             </aside>
@@ -108,6 +112,7 @@ Template Name: Our Team
 								<a href="<?php bloginfo('template_url'); ?>/docs/denson-CV.pdf" target="_blank">Download my CV</a>
                             </div>
                         </li>
+						<!--
                         <li>
                             <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/knight.jpg" alt="Terrence S. Knight, CPA, CFF" />
                             <div class="bio-main">
@@ -117,6 +122,7 @@ Template Name: Our Team
 								<a href="<?php bloginfo('template_url'); ?>/docs/knight-CV.pdf" target="_blank">Download my CV</a>
                             </div>
                         </li>
+						-->
 
                     </ul>
                 </div>
@@ -159,6 +165,7 @@ Template Name: Our Team
 								<a href="<?php bloginfo('template_url'); ?>/docs/derose-CV.pdf" target="_blank">Download my CV</a>
                             </div>
                         </li>
+						<!--
                         <li>
                             <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/stone.jpg" alt="Sandra M. Stone, CFE" />
                             <div class="bio-main">
@@ -168,6 +175,7 @@ Template Name: Our Team
 								<a href="<?php bloginfo('template_url'); ?>/docs/stone-CV.pdf" target="_blank">Download my CV</a>
                             </div>
                         </li>
+						-->
                     </ul>
                 </div>
             </article>

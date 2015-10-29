@@ -27,7 +27,7 @@ Template Name: Resources
             <div id="recent-news">
                 <h1>In the News</h1>
                 <div id="posts-list">
-                <?php query_posts( array( 'orderby' => 'date', 'order' => 'DESC' ) ); ?>
+                <?php query_posts( array( 'orderby' => 'date', 'order' => 'DESC', 'paged' => get_query_var('paged'))); ?>
                     <?php while (have_posts()) : the_post(); ?>
                         <?php the_post_thumbnail('post-thumbnail', array('class' => 'news-thumb')); ?>
                             <div class="news-content">

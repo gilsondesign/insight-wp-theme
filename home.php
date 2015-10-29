@@ -11,9 +11,16 @@ Template Name: Home
     <div class="home-banner" style="background-image: url(<?php bloginfo('template_url'); ?>/img/forensic-accounting-test.jpg);">
         
         <div class="home-banner__text">
+            <!--
+			<div class="home-banner__palogo">
+                <img src="<?php bloginfo('template_url'); ?>/img/peters-logo.png" alt="Curtis J. Reynolds" />
+            </div>
+        	<h1>We've <span>Changed</span> our Name</h1>
+            <p class="change">We are excited to announce that we changed the name of our firm from Peters & Associates to <span>INSIGHT Forensic Accountants.</span></p>
+            -->
+			<p>Insight will help you discover the who, what, where and why. We offer top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
 
-            <p>Insight will help you discover the who, what, where and why. We offer top-notch forensic accountants with the expertise necessary to meet the needs of every client.</p>
-
+            
         </div>
     </div>
 
@@ -69,11 +76,13 @@ Template Name: Home
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#denson">Kathy M. Denson</a></h4>
                         <p class="location">Denver, CO</p>
                     </div>
-                    <div>
+                    <!--
+					<div>
                          <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/knight.jpg" alt="Terrence S. Knight" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#knight">Terrence S. Knight</a></h4>
                         <p class="location">Chicago, IL</p>
                     </div>
+					-->
                </div>
                <h2>Meet Our Staff</h2>
                <div id="staff">
@@ -97,11 +106,13 @@ Template Name: Home
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#derose">Ann F. DeRose</a></h4>
                         <p class="location">Milwaukee, WI</p>
                     </div>
+					<!--
                     <div>
                         <img src="<?php bloginfo('template_url'); ?>/img/staff-photos/stone.jpg" alt="Sandra M. Stone, CFE" />
                         <h4><a href="<?php bloginfo('url'); ?>/our-team/#stone">Sandra M. Stone</a></h4>
                         <p class="location">Pittsburgh, PA</p>
                     </div>
+					-->
                </div>
             </div>
         </div>
@@ -178,7 +189,8 @@ Template Name: Home
             <div id="our-locations">
                 <h3>Our Office Locations</h3>
                 <div>
-                    <div class="location">
+                    <!--
+					<div class="location">
                         <h4>Chicago</h4>
                         <p>7500 W Grand Avenue</p>
                         <p>Suite 22</p>
@@ -187,6 +199,7 @@ Template Name: Home
                         <p>F: 224 643 7493</p>
                         <p><a href="https://www.google.com/maps/place/7500+W+Grand+Ave/@42.3859979,-87.988289,17z/data=!3m1!4b1!4m2!3m1!1s0x880f8fdcb49ea1c3:0xd3b8897286c8228" target="_blank">view map</a></p>
                     </div>
+					-->
                     <div class="location">
                         <h4>Denver</h4>
                         <p>19590 E Mainstreet</p>
